@@ -1,11 +1,10 @@
-ATUALIZAÇÃO — SOBRE NÓS E PRIVACIDADE
+ATUALIZAÇÃO DA PÁGINA CONTACTOS
 
-Este pacote NÃO é um site completo. Substitui apenas experiencia.html e privacidade.html e adiciona as imagens da pasta assets. Mantém todo o restante site.
+Pacote parcial: mantém as restantes páginas e assets/style.css.
+Substitui contacto.html e acrescenta os ficheiros da pasta assets deste ZIP. Não apagues a pasta assets existente.
 
-No GitHub: Add file > Upload files > carrega os dois HTML e a pasta assets na raiz do repositório > Commit changes. O endereço de Sobre Nós mantém-se experiencia.html. Atualiza com Ctrl+F5 após publicar.
+No GitHub: Add file > Upload files > arrasta contacto.html e assets para a raiz > Commit changes. Atualiza com Ctrl+F5 após publicação.
 
-Não substitui assets/app.js: mantém o formulário Formspree, o mapa e as alterações ao menu já existentes. Estas duas páginas não executam o script que antes acrescentava uma segunda secção histórica: a imagem já está incorporada no HTML.
-
-Atualizado: Ricardo Duarte, Biochip - Infordomicilio, GestOS local, eliminação de pedidos sem seguimento no GestOS/Gmail, ordens durante a garantia, ressalvadas obrigações legais e defesa de direitos, sem marketing. Experiência alterada para mais de 25 anos.
-
-Ainda pendente: condições técnicas/contratuais e de conservação no Formspree e outros fornecedores; verificação de transferências; morada de contacto e restantes elementos legais da atividade. Não é certificação de conformidade.
+Telefone facultativo, botão Enviar pedido, endpoint Formspree mantido, telefone incluído no pedido por email e WhatsApp. Nenhum envio de teste foi efetuado.
+O novo mapa é um desenho esquemático local, sem Margem Sul nem fornecedor externo. Não está à escala. Não copia condições de deslocação, horários ou idiomas da imagem de referência.
+A página carrega o seu próprio script, sem substituir assets/app.js das outras páginas. Mantém a ligação à política de privacidade já publicada.
