@@ -1,8 +1,10 @@
-ATUALIZAÇÃO DOS CARTÕES DE SERVIÇOS
+PACOTE COMPLETO — VERSÃO 5
 
-Substitui servicos.html na raiz do repositório e adiciona a pasta assets/servicos com as seis ilustrações SVG.
-Mantém os ficheiros existentes assets/style.css, assets/app.js e assets/banner-assistencia.jpg. Este ZIP é uma atualização, não o site completo.
+Extrai para uma pasta nova e abre index.html. Carrega TODOS os conteúdos desta pasta para a raiz do repositório, não o ZIP nem uma pasta exterior.
+Inclui cartões ilustrados SEM numeração na página inicial e na página Serviços, textos detalhados e a nova imagem ASSISTÊNCIA TÉCNICA INFORMÁTICA.
 
-No GitHub: Add file > Upload files. Arrasta servicos.html e a pasta assets deste pacote para a raiz do repositório. Confirma Commit changes.
+GitHub: Add file > Upload files > arrastar os ficheiros e a pasta assets > Commit changes. Se Pages usa main / (root), publicar na mesma branch main.
+Confere Actions para confirmar a publicação. O ficheiro loja.html é apenas um encaminhamento para Serviços, não uma loja.
+Os antigos css/, js/, img/, style.css e main.js da raiz não são utilizados por esta versão. Não é necessário apagá-los para testar a atualização, mas podes removê-los depois para organizar.
 
-Sem numeração, com um cartão e uma ilustração local por serviço. Não altera a página inicial.
+O site continua sem páginas legais completas; confirma as obrigações aplicáveis antes de divulgação comercial. As limitações de uso comercial do GitHub Pages continuam aplicáveis.
