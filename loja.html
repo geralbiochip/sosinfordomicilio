@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja | Infordomicílio</title>
+<meta name="description" content="Loja online de equipamentos informáticos, acessórios, componentes para portáteis e desktop, periféricos e redes.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="logo">INFO<span>DOMICÍLIO</span></a>
+<nav class="nav" id="nav"><a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="loja.html">Loja</a><a href="contacto.html">Contactos</a><a href="#" class="btn btn-primary" onclick="openCart();return false;">Carrinho (<span id="cart-count">0</span>)</a></nav>
+<button class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+
+<section class="hero small"><div class="container"><h1>Loja de informática</h1><p>Equipamentos, acessórios, componentes, periféricos e artigos para casa ou empresa.</p></div></section>
+
+<section class="section"><div class="container">
+<div class="filters">
+<button class="filter active" data-cat="todos">Todos</button>
+<button class="filter" data-cat="portateis">Portáteis e desktops</button>
+<button class="filter" data-cat="componentes">Componentes</button>
+<button class="filter" data-cat="acessorios">Acessórios</button>
+<button class="filter" data-cat="redes">Redes e Wi‑Fi</button>
+</div>
+<div id="products" class="grid products"></div>
+</div></section>
+
+<div id="cart" class="cart hidden">
+<div class="cart-inner">
+<h2>Carrinho</h2>
+<div id="cart-items"></div>
+<p class="cart-total">Total: <span id="cart-total">0,00 €</span></p>
+<p class="note">Finaliza a encomenda por WhatsApp ou por pagamento online, conforme a disponibilidade do produto.</p>
+<div class="cart-actions">
+<a id="whatsapp-order" class="btn btn-whatsapp" target="_blank" href="#">Encomendar por WhatsApp</a>
+<button class="btn btn-outline" onclick="closeCart()">Continuar a comprar</button>
+</div>
+</div>
+</div>
+
+<footer class="site-footer"><div class="container"><p><strong>Infordomicílio</strong> — Loja e assistência informática</p></div></footer>
+<script src="js/main.js"></script>
+</body></html>

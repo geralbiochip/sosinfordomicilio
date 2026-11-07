@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactos | Infordomicílio</title>
+<meta name="description" content="Contacte a Infordomicílio para assistência informática ao domicílio em Cascais e Lisboa.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="logo">INFO<span>DOMICÍLIO</span></a>
+<nav class="nav" id="nav"><a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="loja.html">Loja</a><a href="contacto.html">Contactos</a><a href="#orcamento" class="btn btn-primary">Pedir orçamento</a></nav>
+<button class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+
+<section class="hero small"><div class="container"><h1>Contactos</h1><p>Estamos ao dispor para assistência técnica, orçamentos e encomendas.</p></div></section>
+
+<section class="section"><div class="container">
+<div class="grid">
+<article class="card"><h3>WhatsApp</h3><p><a href="https://wa.me/351000000000">+351 000 000 000</a></p></article>
+<article class="card"><h3>Email</h3><p><a href="mailto:contacto@infordomicilio.pt">contacto@infordomicilio.pt</a></p></article>
+<article class="card"><h3>Zona de atendimento</h3><p>Cascais, Oeiras, Sintra, Amadora, Lisboa e arredores.</p></article>
+</div>
+
+<div id="orcamento" class="cta-box">
+<h2>Pedir orçamento</h2>
+<p>Preenche o formulário ou envia mensagem pelo WhatsApp. Indica o tipo de equipamento e o problema.</p>
+<form onsubmit="sendWhatsApp(event)">
+<label>Nome<input type="text" id="nome" required></label>
+<label>Telefone<input type="tel" id="telefone" required></label>
+<label>Serviço necessário
+<select id="servico">
+<option>Assistência a portátil</option>
+<option>Assistência a desktop</option>
+<option>Formatação / Windows</option>
+<option>Vírus e segurança</option>
+<option>Redes e Wi‑Fi</option>
+<option>Upgrade / montagem</option>
+<option>Compra de produto</option>
+<option>Outro</option>
+</select></label>
+<label>Mensagem<textarea id="mensagem" rows="4" required></textarea></label>
+<button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+</form>
+</div>
+</div></section>
+
+<footer class="site-footer"><div class="container"><p><strong>Infordomicílio</strong> — Cascais a Lisboa</p></div></footer>
+<script src="js/main.js"></script>
+</body></html>
