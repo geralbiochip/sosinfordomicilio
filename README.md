@@ -1,2 +1,6 @@
-# sosinfordomicilio
-Site e loja da Infordomicílio — assistência informática em Cascais e Lisboa
+# Infordomicílio
+
+Site inicial. Publica no GitHub Pages.
+
+WhatsApp: +351 926 014 310
+Email: geral.biochip@gmail.com
