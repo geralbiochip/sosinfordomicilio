@@ -1,9 +1,10 @@
-PACOTE COMPLETO V8
-Extrai para pasta nova. Publica todos os HTML e a pasta assets na raiz do repositório.
+ATUALIZAÇÃO PARA O PACOTE V9
 
-Logo novo, cabeçalho compacto, ícone e título juntos dentro dos cartões, mapa interativo por clique, Experiência com os 20 anos indicados e formulário com dois canais.
+1. Extrai este ZIP.
+2. No GitHub, na raiz do repositório, escolhe Add file > Upload files e carrega a pasta assets deste pacote. Não apagues a pasta assets existente.
+3. Confirma Commit changes. Após a publicação, atualiza com Ctrl+F5.
 
-EMAIL: por defeito, Preparar email abre a aplicação de correio do visitante. NÃO envia automaticamente e requer uma aplicação configurada.
-Para envio direto: cria uma conta/formulário no Formspree, define geral.biochip@gmail.com como destinatário e conclui a verificação solicitada. Copia o endpoint real em assets/config.js entre as aspas. Publica config.js atualizado. O botão muda para Enviar pedido por email. Faz um envio de teste e confirma a receção. Não coloques passwords ou chaves privadas no site. Revê a informação de privacidade para o fornecedor escolhido.
-
-Não há submissões de teste efetuadas nem serviço de email ativado por este pacote. O mapa depende de Internet e permite navegar para fora da região apresentada.
+Esta atualização substitui assets/app.js e acrescenta assets/infordomicilio-historia.jpg. Mantém todos os teus HTML, CSS, logótipo, cartões e privacidade do pacote V9.
+O menu passa a Início > Serviços > Contactos > Sobre Nós > Pedir orçamento.
+O título e o nome visível de Experiência passam a Sobre Nós. Por compatibilidade, o endereço continua experiencia.html. Estas alterações são aplicadas por JavaScript.
+A imagem é apresentada inteira no final de Sobre Nós, com uma nota para distinguir contactos e condições do material de divulgação dos atuais. Não foi alterado o email do site nem o Formspree. Nenhum teste de envio foi efetuado.
