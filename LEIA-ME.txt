@@ -1,12 +1,8 @@
-INFORDOMICÍLIO — VERSÃO COMPLETA SEM LOJA
+ATUALIZAÇÃO DOS TEXTOS DE SERVIÇOS
 
-Extrai para uma pasta nova e abre index.html.
-Esta versão mantém o visual clean, as três páginas de serviços/contactos, o banner de ASSISTÊNCIA e os contactos reais. Não contém catálogo, carrinho, pagamentos ou código de produtos.
+Este pacote atualiza apenas servicos.html na versão clean sem loja. Usa os ficheiros assets/style.css, assets/app.js e assets/banner-assistencia.jpg que já existem no site. Não apagues a pasta assets.
 
-Para atualizar no Netlify: usa o projeto existente e envia a pasta completa numa nova publicação manual. O index.html deve estar na raiz da pasta enviada. Não sobreponhas simplesmente esta pasta à versão antiga: isso pode deixar o loja.html antigo no teu computador.
-O ficheiro _redirects encaminha o antigo endereço /loja.html para /servicos.html no Netlify. Essa regra não atua quando abres os ficheiros localmente.
+No GitHub, abre o repositório sosinfordomicilio, escolhe Add file > Upload files e carrega servicos.html na raiz, substituindo o ficheiro com o mesmo nome. Confirma com Commit changes.
+Não carregues apenas o ZIP. As outras páginas mantêm-se inalteradas.
 
-WhatsApp: +351 926 014 310
-Email: geral.biochip@gmail.com
-
-O cabeçalho usa nome tipográfico, não o logótipo enviado. As informações legais do responsável e de privacidade ainda devem ser completadas; remover a loja não substitui essa preparação.
+Os textos descrevem serviços sujeitos a avaliação. Confirma que todas as intervenções descritas correspondem ao que efetivamente prestas antes de publicar.
