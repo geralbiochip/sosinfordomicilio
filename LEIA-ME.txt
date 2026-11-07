@@ -1,8 +1,8 @@
-ATUALIZAÇÃO DOS TEXTOS DE SERVIÇOS
+ATUALIZAÇÃO DOS CARTÕES DE SERVIÇOS
 
-Este pacote atualiza apenas servicos.html na versão clean sem loja. Usa os ficheiros assets/style.css, assets/app.js e assets/banner-assistencia.jpg que já existem no site. Não apagues a pasta assets.
+Substitui servicos.html na raiz do repositório e adiciona a pasta assets/servicos com as seis ilustrações SVG.
+Mantém os ficheiros existentes assets/style.css, assets/app.js e assets/banner-assistencia.jpg. Este ZIP é uma atualização, não o site completo.
 
-No GitHub, abre o repositório sosinfordomicilio, escolhe Add file > Upload files e carrega servicos.html na raiz, substituindo o ficheiro com o mesmo nome. Confirma com Commit changes.
-Não carregues apenas o ZIP. As outras páginas mantêm-se inalteradas.
+No GitHub: Add file > Upload files. Arrasta servicos.html e a pasta assets deste pacote para a raiz do repositório. Confirma Commit changes.
 
-Os textos descrevem serviços sujeitos a avaliação. Confirma que todas as intervenções descritas correspondem ao que efetivamente prestas antes de publicar.
+Sem numeração, com um cartão e uma ilustração local por serviço. Não altera a página inicial.
