@@ -1,10 +1,11 @@
-ATUALIZAÇÃO PARA O PACOTE V9
+ATUALIZAÇÃO — SOBRE NÓS E PRIVACIDADE
 
-1. Extrai este ZIP.
-2. No GitHub, na raiz do repositório, escolhe Add file > Upload files e carrega a pasta assets deste pacote. Não apagues a pasta assets existente.
-3. Confirma Commit changes. Após a publicação, atualiza com Ctrl+F5.
+Este pacote NÃO é um site completo. Substitui apenas experiencia.html e privacidade.html e adiciona as imagens da pasta assets. Mantém todo o restante site.
 
-Esta atualização substitui assets/app.js e acrescenta assets/infordomicilio-historia.jpg. Mantém todos os teus HTML, CSS, logótipo, cartões e privacidade do pacote V9.
-O menu passa a Início > Serviços > Contactos > Sobre Nós > Pedir orçamento.
-O título e o nome visível de Experiência passam a Sobre Nós. Por compatibilidade, o endereço continua experiencia.html. Estas alterações são aplicadas por JavaScript.
-A imagem é apresentada inteira no final de Sobre Nós, com uma nota para distinguir contactos e condições do material de divulgação dos atuais. Não foi alterado o email do site nem o Formspree. Nenhum teste de envio foi efetuado.
+No GitHub: Add file > Upload files > carrega os dois HTML e a pasta assets na raiz do repositório > Commit changes. O endereço de Sobre Nós mantém-se experiencia.html. Atualiza com Ctrl+F5 após publicar.
+
+Não substitui assets/app.js: mantém o formulário Formspree, o mapa e as alterações ao menu já existentes. Estas duas páginas não executam o script que antes acrescentava uma segunda secção histórica: a imagem já está incorporada no HTML.
+
+Atualizado: Ricardo Duarte, Biochip - Infordomicilio, GestOS local, eliminação de pedidos sem seguimento no GestOS/Gmail, ordens durante a garantia, ressalvadas obrigações legais e defesa de direitos, sem marketing. Experiência alterada para mais de 25 anos.
+
+Ainda pendente: condições técnicas/contratuais e de conservação no Formspree e outros fornecedores; verificação de transferências; morada de contacto e restantes elementos legais da atividade. Não é certificação de conformidade.
