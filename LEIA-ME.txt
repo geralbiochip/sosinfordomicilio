@@ -1,9 +1,9 @@
-INFORDOMICÍLIO — PACOTE COMPLETO V6
+PACOTE COMPLETO V8
+Extrai para pasta nova. Publica todos os HTML e a pasta assets na raiz do repositório.
 
-Extrai para pasta nova e testa index.html.
-Carrega TODOS os ficheiros e a pasta assets na raiz do repositório. Não carregues só o ZIP nem uma pasta exterior. Confirma Commit changes e aguarda a publicação da branch configurada.
+Logo novo, cabeçalho compacto, ícone e título juntos dentro dos cartões, mapa interativo por clique, Experiência com os 20 anos indicados e formulário com dois canais.
 
-Inclui: cartões compactos em Início e Serviços, todos os textos detalhados na página Serviços, Experiência com 20 anos de apoio (informação fornecida pelo responsável), Contactos com mapa OpenStreetMap ativado por clique, logótipo novo recortado apenas nas margens vazias e banner recente.
-Não foram inventados nomes de clientes, testemunhos, certificações ou quantidades de trabalhos. Revê os textos e confirma os serviços antes de divulgar.
-O mapa requer Internet e é um enquadramento aproximado da região, não uma morada comercial nem um polígono de cobertura garantida.
-As informações legais do responsável e de privacidade ainda devem ser preparadas. As restrições do GitHub Pages a negócios mantêm-se.
+EMAIL: por defeito, Preparar email abre a aplicação de correio do visitante. NÃO envia automaticamente e requer uma aplicação configurada.
+Para envio direto: cria uma conta/formulário no Formspree, define geral.biochip@gmail.com como destinatário e conclui a verificação solicitada. Copia o endpoint real em assets/config.js entre as aspas. Publica config.js atualizado. O botão muda para Enviar pedido por email. Faz um envio de teste e confirma a receção. Não coloques passwords ou chaves privadas no site. Revê a informação de privacidade para o fornecedor escolhido.
+
+Não há submissões de teste efetuadas nem serviço de email ativado por este pacote. O mapa depende de Internet e permite navegar para fora da região apresentada.
