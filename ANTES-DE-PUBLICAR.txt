@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g fill="none" stroke="#b32c37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="19" height="15" rx="2"/><path d="M11 21v6m-5 0h10"/><rect x="25" y="3" width="5" height="25" rx="1"/></g></svg>
+PACOTE COMPLETO V9
+
+Formspree configurado: https://formspree.io/f/myeeanpv
+Não foi feito envio de teste nem confirmada a caixa destinatária. Confirma o destinatário e ativação no painel Formspree, publica, envia um pedido de teste e verifica receção e spam.
+
+PRIVACIDADE: privacidade.html é uma base provisória. Faltam nome legal completo do responsável e morada, validação dos fornecedores e transferências, critérios de conservação e rotina efetiva de eliminação. Não é uma certificação de conformidade. A checkbox confirma leitura; não é consentimento para marketing. Completa os elementos antes da recolha regular.
+
+RODAPÉ: links genéricos para a plataforma oficial de reclamações e para o respetivo canal Elogiar/Sugerir. Não é confirmação de registo do negócio, nem adesão a uma marca privada Livro de Elogios. Confirma o teu registo de operador na plataforma oficial.
+
+Extrai para pasta nova, testa index.html e publica todos os ficheiros e assets na raiz do repositório. Mantém index.html e os outros HTML ao mesmo nível. Os cartões da página inicial são links completos para âncoras dos seis cartões na página Serviços. Após publicar atualiza com Ctrl+F5.
