@@ -1,10 +1,13 @@
-ATUALIZAÇÃO: ZONAS INTERATIVAS + SITES E ALOJAMENTO
+ATUALIZAÇÃO DO ESQUEMA INTERATIVO
 
-Este pacote substitui index.html, servicos.html e contacto.html e adiciona os ficheiros assets incluídos. Mantém experiencia.html, privacidade.html e os outros ficheiros. Não é um site completo.
-No GitHub carrega os três HTML e assets na raiz, confirma Commit changes e atualiza com Ctrl+F5 após publicar.
+Aplica-se à versão com assets/zonas-sites.js.
 
-Quatro grupos de cores: Cascais e Linha; Alcabideche/Manique/Tires/São Domingos de Rana; Sintra; Oeiras/Carnaxide/Algés/Lisboa. Ao passar o rato ou focar com teclado, apenas a zona escolhida é apresentada. Ao sair, todas voltam. No telemóvel, toca para selecionar; toca novamente ou Mostrar todas para repor.
+1. Abre ajuste-parede-cores.js no Bloco de Notas e copia TODO o conteúdo.
+2. No GitHub abre assets/zonas-sites.js e clica em editar (lápis).
+3. Vai ao FINAL do ficheiro e cola o conteúdo, sem apagar o que já existe.
+4. Confirma Commit changes. Após publicar atualiza com Ctrl+F5.
 
-O mapa é ilustrativo e sem escala. Não representa trajetos reais, tempos de viagem nem base de partida. Não inclui Margem Sul.
-Novo serviço na página inicial (cartão clicável), Serviços e opções do formulário. Sem preço inventado: âmbito da avença e domínio dependem do orçamento.
-Formspree, telefone opcional, WhatsApp e link para privacidade mantidos. Nenhum envio de teste foi efetuado.
+NÃO substituas zonas-sites.js apenas por este fragmento, porque perderias o formulário e a interação das zonas. Coloca o fragmento só uma vez.
+
+Origem comum: Parede, incluindo a linha para Lisboa. Fundo azul-cinza claro, pontos mais contrastados. Vermelho mantido para Cascais e Linha; laranja para Alcabideche e envolvente; amarelo (tom legível) para Sintra; verde para Oeiras e Lisboa. Interação por rato, teclado e toque mantém-se.
+Esquema ilustrativo, sem escala ou tempos de deslocação. Este pacote não modifica formulários, páginas legais ou outras páginas.

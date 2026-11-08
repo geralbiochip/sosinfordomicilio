@@ -1,0 +1,11 @@
+CORREÇÃO DIRETA — ORIGEM PAREDE
+
+A causa encontrada no ZIP enviado: ajuste-parede-cores.js estava na raiz mas contacto.html não o carregava, e o ajuste não constava no final de assets/zonas-sites.js.
+Agora o SVG no próprio contacto.html já contém as rotas com início M285 355 (Parede), novas cores e fundo. JavaScript apenas gere formulário e seleção das zonas.
+
+PACOTE COMPLETO: preserva os ficheiros enviados, exceto ZIPs internos e o remendo não carregado. Mantém as restantes páginas sem alterações. Há ficheiros de versões antigas no pacote original; não foram removidos para não afetar outras páginas.
+
+Para atualizar apenas o necessário: carregar contacto.html, assets/zonas-parede-corrigido.css e assets/zonas-parede-corrigido.js na raiz/pasta assets do repositório. Não carregar o ZIP sem extrair. Confirmar Commit changes e aguardar a publicação.
+Ou carregar o conteúdo todo deste pacote mantendo a estrutura. Nunca apagar a pasta assets existente.
+
+Testar: sem selecionar zonas, todas as linhas partem do marcador PAREDE. Cores: vermelho, laranja, amarelo escuro legível e verde. Ao passar rato/focar ou tocar, filtra por zona. Nenhum envio de formulário foi feito. Os prazos e condições de atendimento não foram alterados.
