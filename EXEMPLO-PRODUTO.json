@@ -1,0 +1,21 @@
+[
+  {
+    "ativo": false,
+    "referencia": "INF-001",
+    "nome": "SUBSTITUIR — nome e modelo reais",
+    "categoria": "Portáteis",
+    "estado": "Recondicionado",
+    "descricao": "Substituir por uma descrição verdadeira.",
+    "caracteristicas": [
+      "Processador e modelo",
+      "Memória RAM",
+      "Armazenamento"
+    ],
+    "marcas_ou_defeitos": "Indicar desgaste, defeitos ou acessórios em falta.",
+    "preco": null,
+    "disponibilidade": "Disponível",
+    "foto": "assets/produtos/inf-001.jpg",
+    "entrega": "Indicar condições reais.",
+    "garantia": "Indicar as condições legalmente aplicáveis."
+  }
+]

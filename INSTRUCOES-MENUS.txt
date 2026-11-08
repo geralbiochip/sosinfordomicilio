@@ -1,0 +1,17 @@
+CORREÇÃO DOS MENUS — CATÁLOGO EM TODAS AS PÁGINAS
+
+Ficheiros preparados a partir do ZIP EXEMPLO-PRODUTO.zip fornecido.
+Só os blocos nav dos seis HTML foram alterados. Todo o restante conteúdo de cada ficheiro foi preservado, incluindo mapa, formulários, scripts, fotografias e o HP.
+
+Ordem: Início > Serviços > Catálogo > Contactos > Sobre Nós.
+O botão Pedir orçamento foi preservado onde já existia.
+
+COMO APLICAR A ATUALIZAÇÃO PEQUENA:
+1. Extrai atualizacao-menus-catalogo.zip.
+2. No GitHub abre o repositório sosinfordomicilio.
+3. Add file > Upload files: carrega os seis HTML diretamente na raiz, ao lado da pasta assets, substituindo os anteriores.
+4. Commit changes. Aguarda a publicação e atualiza com Ctrl+F5.
+5. Abre Serviços, Contactos, Sobre Nós e Privacidade e confirma que Catálogo aparece e abre catalogo.html.
+
+Não é preciso substituir assets. Não carregues só o ZIP nem a pasta exterior.
+O segundo pacote site-completo-menus-corrigidos.zip é a cópia completa do site enviado com os mesmos seis HTML corrigidos; não precisas de aplicar os dois pacotes.

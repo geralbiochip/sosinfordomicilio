@@ -1,0 +1,26 @@
+[
+  {
+    "ativo": true,
+    "referencia": "INF-001",
+    "nome": "Portátil HP 15 — AMD 2,4 GHz · 8 GB RAM · SSD 128 GB",
+    "categoria": "Computadores / Portáteis",
+    "estado": "Estado a confirmar",
+    "descricao": "Portátil HP 15 com processador AMD a 2,4 GHz, 8 GB de memória RAM e SSD de 128 GB. Windows 11 e Office 2019 instalados, conforme informação do vendedor.",
+    "caracteristicas": [
+      "Processador: AMD — 2,4 GHz",
+      "Memória RAM: 8 GB",
+      "Armazenamento: SSD de 128 GB",
+      "Sistema instalado: Windows 11",
+      "Software instalado: Office 2019"
+    ],
+    "marcas_ou_defeitos": "Consultar o vendedor sobre o estado, autonomia da bateria, marcas de utilização e acessórios incluídos.",
+    "preco": 160,
+    "disponibilidade": "Disponibilidade a confirmar",
+    "foto": "assets/produtos/inf-001-hp15.jpg",
+    "fotos": [
+      "assets/produtos/inf-001-hp15.jpg"
+    ],
+    "entrega": "Entrega e valor total a confirmar antes da venda.",
+    "garantia": ""
+  }
+]

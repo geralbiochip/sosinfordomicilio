@@ -1,14 +1,7 @@
-MAPA PROFISSIONAL + APOIO REMOTO
+CATÁLOGO POR CATEGORIAS
 
-Atualização direta sobre a página Contactos enviada anteriormente. Não é o site completo.
+Substitui apenas catalogo.html na raiz do repositório. Não precisas de alterar assets ou produtos.json: esta versão é autónoma, com a fotografia e o artigo no próprio HTML.
 
-1. Extrai o ZIP.
-2. No GitHub, Add file > Upload files: carrega contacto.html na raiz e os dois ficheiros da pasta assets dentro de assets.
-3. Confirma Commit changes, aguarda publicação e atualiza com Ctrl+F5.
-
-Ficheiros: contacto.html, assets/cobertura-profissional.css, assets/cobertura-profissional.js.
-Não colar código nem apagar a pasta assets existente. Os outros ficheiros e páginas mantêm-se.
-
-Esquema em rede de cobertura com origem comum Parede. Quatro cores mantidas, localidades identificadas, fundo de pontos discreto e faixas por zona. Não representa geografia à escala, percursos reais, distâncias ou tempos.
-O apoio remoto aparece à direita num cartão separado, sem rotas geográficas. No telemóvel surge abaixo e o diagrama pode ser deslizado na horizontal.
-A interação de zonas por rato, foco do teclado ou toque é mantida. O formulário foi preservado sem alteração, incluindo o telefone opcional e o endereço Formspree. Não foi realizado qualquer envio de teste.
+Categorias: Portáteis, Desktops, Componentes com subcategorias Teclados, LCD/ecrãs, Memórias RAM, Discos/SSD, Baterias, Carregadores, Motherboards, Processadores, Placas gráficas, Fontes, Refrigeração, Dobradiças/Carcaças, Cabos, Rede e Outros componentes.
+HP 15: Portáteis; estado Usado/Recondicionado; 160 EUR. Só este produto está publicado. Categorias vazias apresentam aviso e contacto, sem produtos fictícios.
+O ficheiro pode ser aberto por duplo clique para ver e filtrar. O formulário precisa de Internet. Não foi enviado pedido de teste nem alterado o site publicado automaticamente.
