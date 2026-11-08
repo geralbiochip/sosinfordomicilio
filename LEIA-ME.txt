@@ -1,10 +1,10 @@
-ATUALIZAÇÃO DA PÁGINA CONTACTOS
+ATUALIZAÇÃO: ZONAS INTERATIVAS + SITES E ALOJAMENTO
 
-Pacote parcial: mantém as restantes páginas e assets/style.css.
-Substitui contacto.html e acrescenta os ficheiros da pasta assets deste ZIP. Não apagues a pasta assets existente.
+Este pacote substitui index.html, servicos.html e contacto.html e adiciona os ficheiros assets incluídos. Mantém experiencia.html, privacidade.html e os outros ficheiros. Não é um site completo.
+No GitHub carrega os três HTML e assets na raiz, confirma Commit changes e atualiza com Ctrl+F5 após publicar.
 
-No GitHub: Add file > Upload files > arrasta contacto.html e assets para a raiz > Commit changes. Atualiza com Ctrl+F5 após publicação.
+Quatro grupos de cores: Cascais e Linha; Alcabideche/Manique/Tires/São Domingos de Rana; Sintra; Oeiras/Carnaxide/Algés/Lisboa. Ao passar o rato ou focar com teclado, apenas a zona escolhida é apresentada. Ao sair, todas voltam. No telemóvel, toca para selecionar; toca novamente ou Mostrar todas para repor.
 
-Telefone facultativo, botão Enviar pedido, endpoint Formspree mantido, telefone incluído no pedido por email e WhatsApp. Nenhum envio de teste foi efetuado.
-O novo mapa é um desenho esquemático local, sem Margem Sul nem fornecedor externo. Não está à escala. Não copia condições de deslocação, horários ou idiomas da imagem de referência.
-A página carrega o seu próprio script, sem substituir assets/app.js das outras páginas. Mantém a ligação à política de privacidade já publicada.
+O mapa é ilustrativo e sem escala. Não representa trajetos reais, tempos de viagem nem base de partida. Não inclui Margem Sul.
+Novo serviço na página inicial (cartão clicável), Serviços e opções do formulário. Sem preço inventado: âmbito da avença e domínio dependem do orçamento.
+Formspree, telefone opcional, WhatsApp e link para privacidade mantidos. Nenhum envio de teste foi efetuado.
