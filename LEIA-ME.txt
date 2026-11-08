@@ -1,7 +1,16 @@
-CATÁLOGO POR CATEGORIAS
+SEO E SEARCH CONSOLE
 
-Substitui apenas catalogo.html na raiz do repositório. Não precisas de alterar assets ou produtos.json: esta versão é autónoma, com a fotografia e o artigo no próprio HTML.
+Publicar na raiz do repositório sosinfordomicilio:
+- index.html (já mantém ligação Catálogo e o título solicitado)
+- sitemap.xml
+- googled077a29f036b2406.html (ficheiro de verificação original, não alterado)
+Não é necessário publicar head-inicio.html: é apenas uma cópia do head para consulta/colagem.
 
-Categorias: Portáteis, Desktops, Componentes com subcategorias Teclados, LCD/ecrãs, Memórias RAM, Discos/SSD, Baterias, Carregadores, Motherboards, Processadores, Placas gráficas, Fontes, Refrigeração, Dobradiças/Carcaças, Cabos, Rede e Outros componentes.
-HP 15: Portáteis; estado Usado/Recondicionado; 160 EUR. Só este produto está publicado. Categorias vazias apresentam aviso e contacto, sem produtos fictícios.
-O ficheiro pode ser aberto por duplo clique para ver e filtrar. O formulário precisa de Internet. Não foi enviado pedido de teste nem alterado o site publicado automaticamente.
+O index foi preparado a partir do último ZIP enviado e mantém o CSS assets/zonas-sites.css. Não altera Serviços, Contactos, Catálogo, Sobre Nós ou Privacidade.
+
+Depois de publicar, verificar a propriedade no Search Console com a meta tag ou o ficheiro HTML. Submeter sitemap.xml na propriedade exata https://geralbiochip.github.io/sosinfordomicilio/.
+Usar Inspeção de URL na homepage, Testar URL publicado e Solicitar indexação se disponível. Não há garantia de indexação, prazo, ranking ou resultados enriquecidos.
+Não criar robots.txt nesta subpasta como se fosse válido para o domínio inteiro. O sitemap funciona sem isso.
+
+Schema: WebSite, Person (Ricardo Duarte) e Service. Sem endereço físico inventado, avaliações, preços ou ano de fundação inventados. Não é uma declaração de elegibilidade para resultados enriquecidos LocalBusiness.
+Ficheiros e URLs do sitemap são baseados no site fornecido. A disponibilidade pública não pôde ser confirmada nesta sessão.
