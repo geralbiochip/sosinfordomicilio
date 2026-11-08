@@ -1,2 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://geralbiochip.github.io/sosinfordomicilio/</loc></url><url><loc>https://geralbiochip.github.io/sosinfordomicilio/servicos.html</loc></url><url><loc>https://geralbiochip.github.io/sosinfordomicilio/contacto.html</loc></url><url><loc>https://geralbiochip.github.io/sosinfordomicilio/experiencia.html</loc></url><url><loc>https://geralbiochip.github.io/sosinfordomicilio/catalogo.html</loc></url><url><loc>https://geralbiochip.github.io/sosinfordomicilio/privacidade.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://geralbiochip.github.io/sosinfordomicilio/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
