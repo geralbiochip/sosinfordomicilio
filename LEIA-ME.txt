@@ -1,13 +1,14 @@
-ATUALIZAÇÃO DO ESQUEMA INTERATIVO
+MAPA PROFISSIONAL + APOIO REMOTO
 
-Aplica-se à versão com assets/zonas-sites.js.
+Atualização direta sobre a página Contactos enviada anteriormente. Não é o site completo.
 
-1. Abre ajuste-parede-cores.js no Bloco de Notas e copia TODO o conteúdo.
-2. No GitHub abre assets/zonas-sites.js e clica em editar (lápis).
-3. Vai ao FINAL do ficheiro e cola o conteúdo, sem apagar o que já existe.
-4. Confirma Commit changes. Após publicar atualiza com Ctrl+F5.
+1. Extrai o ZIP.
+2. No GitHub, Add file > Upload files: carrega contacto.html na raiz e os dois ficheiros da pasta assets dentro de assets.
+3. Confirma Commit changes, aguarda publicação e atualiza com Ctrl+F5.
 
-NÃO substituas zonas-sites.js apenas por este fragmento, porque perderias o formulário e a interação das zonas. Coloca o fragmento só uma vez.
+Ficheiros: contacto.html, assets/cobertura-profissional.css, assets/cobertura-profissional.js.
+Não colar código nem apagar a pasta assets existente. Os outros ficheiros e páginas mantêm-se.
 
-Origem comum: Parede, incluindo a linha para Lisboa. Fundo azul-cinza claro, pontos mais contrastados. Vermelho mantido para Cascais e Linha; laranja para Alcabideche e envolvente; amarelo (tom legível) para Sintra; verde para Oeiras e Lisboa. Interação por rato, teclado e toque mantém-se.
-Esquema ilustrativo, sem escala ou tempos de deslocação. Este pacote não modifica formulários, páginas legais ou outras páginas.
+Esquema em rede de cobertura com origem comum Parede. Quatro cores mantidas, localidades identificadas, fundo de pontos discreto e faixas por zona. Não representa geografia à escala, percursos reais, distâncias ou tempos.
+O apoio remoto aparece à direita num cartão separado, sem rotas geográficas. No telemóvel surge abaixo e o diagrama pode ser deslizado na horizontal.
+A interação de zonas por rato, foco do teclado ou toque é mantida. O formulário foi preservado sem alteração, incluindo o telefone opcional e o endereço Formspree. Não foi realizado qualquer envio de teste.
