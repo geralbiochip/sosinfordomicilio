@@ -8,3 +8,23 @@ Mensagem: ${d.get('mensagem')}`;window.open('https://wa.me/351926014310?text='+e
 const map=document.querySelector('.dynamic-map');if(map){const choices=[...document.querySelectorAll('[data-zone]')];let pinned=null;const coarse=matchMedia('(hover: none)').matches;
 function show(key){map.classList.toggle('filtered',!!key);document.querySelectorAll('[data-map-zone]').forEach(g=>g.classList.toggle('selected',g.dataset.mapZone===key));choices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.zone===key)));document.querySelector('#map-status').textContent=key?'Zona em destaque: '+choices.find(b=>b.dataset.zone===key).querySelector('.zone-title').textContent:'Todas as zonas visíveis.';}
 choices.forEach(b=>{b.addEventListener('pointerenter',()=>{if(!coarse)show(b.dataset.zone);});b.addEventListener('pointerleave',()=>{if(!coarse)show(null);});b.addEventListener('focus',()=>{if(!coarse)show(b.dataset.zone);});b.addEventListener('blur',()=>{if(!coarse)show(null);});b.addEventListener('click',()=>{if(coarse){pinned=pinned===b.dataset.zone?null:b.dataset.zone;show(pinned);}else show(b.dataset.zone);});});document.querySelector('#all-zones').onclick=()=>{pinned=null;show(null);};document.addEventListener('keydown',e=>{if(e.key==='Escape'){pinned=null;show(null);}});}
+
+;(() => {
+  function applyContactPolicy(){
+    const file=location.pathname.split('/').pop().toLowerCase();
+    const home=file===''||file==='index.html';
+    let kept=false;
+    document.querySelectorAll('a[href]').forEach(a=>{
+      if(!/^(?:https?:\/\/)?(?:wa\.me\/|(?:api\.|web\.)?whatsapp\.com\/)|^whatsapp:/i.test(a.getAttribute('href')||''))return;
+      if(home&&!kept){kept=true;return;}
+      a.remove();
+    });
+    document.querySelectorAll('button[value="whatsapp"],input[type="submit"][value="whatsapp"]').forEach(b=>b.remove());
+    document.querySelectorAll('.zone-title,.zone-desc,.zone-places,.dynamic-map title,.dynamic-map desc').forEach(el=>{
+      const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;
+      while(n=walker.nextNode())n.nodeValue=n.nodeValue.replace(/Alcabideche e envolvente/g,'Alcabideche e zonas envolventes').replace(/Sintra e envolvente/g,'Sintra e zonas envolventes');
+    });
+    document.querySelectorAll('[aria-label]').forEach(el=>el.setAttribute('aria-label',el.getAttribute('aria-label').replace(/Alcabideche e envolvente/g,'Alcabideche e zonas envolventes').replace(/Sintra e envolvente/g,'Sintra e zonas envolventes')));
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',applyContactPolicy);else applyContactPolicy();
+})();

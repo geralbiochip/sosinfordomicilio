@@ -1,16 +1,12 @@
-SEO E SEARCH CONSOLE
+PUBLICAR SEM ALTERAR O LAYOUT
 
-Publicar na raiz do repositório sosinfordomicilio:
-- index.html (já mantém ligação Catálogo e o título solicitado)
-- sitemap.xml
-- googled077a29f036b2406.html (ficheiro de verificação original, não alterado)
-Não é necessário publicar head-inicio.html: é apenas uma cópia do head para consulta/colagem.
+Na raiz do repositório, carregar experiencia.html, privacidade.html e os dois JavaScript dentro da pasta assets.
+Mesclar a pasta assets, não a apagar nem substituir por inteiro.
+Não é necessário substituir index.html, contacto.html ou catalogo.html.
+Não mexe no CSS atual: conserva mapa escuro, textos brancos e canto da imagem.
 
-O index foi preparado a partir do último ZIP enviado e mantém o CSS assets/zonas-sites.css. Não altera Serviços, Contactos, Catálogo, Sobre Nós ou Privacidade.
-
-Depois de publicar, verificar a propriedade no Search Console com a meta tag ou o ficheiro HTML. Submeter sitemap.xml na propriedade exata https://geralbiochip.github.io/sosinfordomicilio/.
-Usar Inspeção de URL na homepage, Testar URL publicado e Solicitar indexação se disponível. Não há garantia de indexação, prazo, ranking ou resultados enriquecidos.
-Não criar robots.txt nesta subpasta como se fosse válido para o domínio inteiro. O sitemap funciona sem isso.
-
-Schema: WebSite, Person (Ricardo Duarte) e Service. Sem endereço físico inventado, avaliações, preços ou ano de fundação inventados. Não é uma declaração de elegibilidade para resultados enriquecidos LocalBusiness.
-Ficheiros e URLs do sitemap são baseados no site fornecido. A disponibilidade pública não pôde ser confirmada nesta sessão.
+Resultado: um único botão WhatsApp na página inicial. Restantes botões WhatsApp removidos, incluindo a opção de submissão WhatsApp dos Contactos. Formulários e seus destinos conservados.
+Mantém telefone/email textuais. Não remove botões de formulário.
+Alcabideche e zonas envolventes / Sintra e zonas envolventes atualizados na lista, descrição acessível e etiquetas.
+Mantida a animação desde a Parede antes do tracejado contínuo.
+Atualizar as páginas com Ctrl+F5 depois da publicação.
