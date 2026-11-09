@@ -1,0 +1,38 @@
+/* Correção visual: mapa escuro e arredondamento aplicado à imagem visível. */
+img.banner-image {
+  object-fit: contain !important;
+  object-position: center !important;
+  background-color: transparent !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 0 0 32px !important;
+  clip-path: inset(0 round 0 0 0 32px);
+}
+.coverage .dynamic-map {
+  background: #081719 !important;
+  border-color: #294042 !important;
+}
+.coverage .dynamic-map > rect:first-of-type {
+  fill: #081719 !important;
+  stroke: #294042 !important;
+}
+.coverage .dynamic-map #coverage-dots circle {
+  fill: #466167 !important;
+}
+.coverage .dynamic-map text {
+  fill: #ffffff !important;
+  font-weight: 700;
+  paint-order: stroke fill;
+  stroke: #081719;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.coverage .dynamic-map > rect[width="16"] {
+  fill: #ffffff !important;
+}
+.coverage .dynamic-map > circle[stroke] {
+  stroke: #d6e2e5 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .coverage .dynamic-map .route { animation: none !important; }
+}

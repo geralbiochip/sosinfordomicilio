@@ -1,0 +1,17 @@
+ATUALIZAÇÃO SOBRE O ZIP sosinfordomicilio ENVIADO
+
+Extrair e carregar na raiz do repositório os seis HTML e a pasta assets incluídos, mantendo a estrutura.
+Não criar uma pasta sosinfordomicilio adicional dentro do repositório.
+Não apagar assets nem substituir toda a pasta por esta: mesclar apenas os ficheiros incluídos.
+
+Alterados: seis HTML (ligação ao CSS novo; Contactos inclui as novas cores SVG), assets/cobertura-profissional.js.
+Novo: assets/ajustements-banner-couverture.css.
+A imagem, os produtos, formulários, textos, menus, CSS existentes e restantes ficheiros foram conservados.
+
+Banner: imagem integral, fundo transparente para mostrar o fundo existente do banner, dimensões mantidas.
+Mapa: cinzento claro e pontos vermelhos; textos escuros; trajetos por zona preservados.
+Interação: desenho desde a Parede e depois animação tracejada contínua. Teclado, rato e toque suportados.
+Movimento reduzido: sem animações para utilizadores com essa preferência ativa.
+
+Testado em Chromium sem interface: rato, foco de teclado, toque móvel, regresso a todas as zonas, redução de movimento e filtro do HP 15.
+Após publicar, atualizar com Ctrl+F5.
