@@ -28,3 +28,49 @@ choices.forEach(b=>{b.addEventListener('pointerenter',()=>{if(!coarse)show(b.dat
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',applyContactPolicy);else applyContactPolicy();
 })();
+
+;(() => {
+function improveForms(){
+ document.querySelectorAll('#quote,#product-form').forEach(form=>{
+  if(form.dataset.assistanceEnhanced)return;form.dataset.assistanceEnhanced='true';
+  const message=form.querySelector('textarea[name="mensagem"]');
+  if(message){
+   message.placeholder=form.id==='quote'?'Ex.: HP 15; não arranca desde ontem; aparece uma mensagem de erro. Indica também o que já tentaste.':'Indica as tuas dúvidas sobre estado, bateria, acessórios, garantia ou entrega do artigo.';
+   const help=document.createElement('p');help.className='small';help.id=form.id+'-message-help';
+   help.textContent=form.id==='quote'?'Indica a marca/modelo, os sintomas e eventuais mensagens de erro. Não envies palavras-passe nem dados bancários.':'A referência do artigo já segue no pedido. Não envies palavras-passe nem dados bancários.';
+   help.style.margin='5px 0 10px';message.insertAdjacentElement('afterend',help);
+   message.setAttribute('aria-describedby',help.id);
+  }
+  const service=form.querySelector('select[name="servico"]');
+  if(service&&!service.querySelector('option[value=""]')){
+   const option=new Option('Seleciona o serviço','',true,true);option.disabled=true;service.prepend(option);service.required=true;
+  }
+  const phone=form.querySelector('[name="telefone"]');if(phone){phone.type='tel';phone.inputMode='tel';}
+  form.querySelectorAll('input:not([type="hidden"]),textarea,select').forEach(field=>{
+   const clear=()=>{field.setCustomValidity('');field.removeAttribute('aria-invalid');};
+   field.addEventListener('input',clear);field.addEventListener('change',clear);
+   field.addEventListener('invalid',()=>{
+    field.setAttribute('aria-invalid','true');
+    let text='';
+    if(field.validity.valueMissing){
+     if(field.type==='checkbox')text='Confirma que leste a informação de proteção de dados para continuar.';
+     else if(field.tagName==='SELECT')text='Seleciona o serviço que procuras.';
+     else text=({nome:'Indica o teu nome.',email:'Indica um email para receberes a resposta.',local:'Indica a localidade onde precisas de assistência.',localidade:'Indica a tua localidade.',mensagem:'Escreve uma breve descrição do pedido.'})[field.name]||'Preenche este campo.';
+    }else if(field.type==='email'&&field.validity.typeMismatch)text='Verifica o email. Usa um formato como nome@exemplo.pt.';
+    if(text)field.setCustomValidity(text);
+   });
+  });
+  const status=form.querySelector('[role="status"]');if(status){
+   status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');
+   new MutationObserver(()=>{
+    const text=status.textContent;
+    if(text.includes('O serviço de formulário aceitou o pedido.')){
+     const desired=form.id==='product-form'?'O serviço de formulário aceitou o pedido sobre o artigo. Aguarda a confirmação de disponibilidade e condições. Este envio não confirma uma compra.':'O serviço de formulário aceitou o pedido. A resposta será enviada para o email indicado, no prazo de 24 horas úteis.';
+     if(text!==desired)status.textContent=desired;
+    }
+   }).observe(status,{childList:true,subtree:true,characterData:true});
+  }
+ });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',improveForms);else improveForms();
+})();
