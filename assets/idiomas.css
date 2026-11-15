@@ -1,11 +1,60 @@
-/* Idiomas na barra superior, imediatamente após telefone e email. */
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:8px 16px;flex-wrap:wrap}
-.top .top-contact-language{display:flex;align-items:center;justify-content:flex-end;gap:8px 12px;flex-wrap:wrap;margin-left:auto;min-width:0}
-.top .top-contact-language>span{display:inline!important;white-space:normal}
-.top .top-contact-language>span a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-.top .language-options{display:flex;gap:4px;align-items:center;flex-wrap:nowrap}
-.top .language-options a{display:inline-flex;align-items:center;justify-content:center;min-width:31px;min-height:26px;padding:3px 6px;border:1px solid #d8dde3;border-radius:5px;background:#fff;color:#43515e;font:650 11px/1.3 system-ui,sans-serif;text-decoration:none;letter-spacing:.3px}
-.top .language-options a[aria-current="true"]{background:#b32c37;border-color:#b32c37;color:white}
-.top .language-options a:hover{border-color:#b32c37}
-.top .language-options a:focus-visible{outline:3px solid #ce7a83;outline-offset:2px}
-@media(max-width:650px){.top .wrap{gap:5px}.top .top-contact-language{width:100%;gap:5px 10px}.top .top-contact-language>span{display:inline!important}header #nav{top:100%;z-index:30}}
+/* Seletor de idiomas acima do menu, sem alterar os ficheiros HTML. */
+header{display:flex;flex-direction:column}
+header .language-row{order:-1;display:flex;justify-content:flex-end;padding-top:7px;padding-bottom:3px;gap:5px}
+header .language-options{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+header .language-options a{display:inline-flex;align-items:center;justify-content:center;min-width:35px;min-height:30px;padding:3px 8px;border:1px solid #d8dde3;border-radius:5px;background:white;color:#43515e;font:650 12px/1.3 system-ui,sans-serif;text-decoration:none;letter-spacing:.3px}
+header .language-options a[aria-current="true"]{background:#b32c37;border-color:#b32c37;color:white}
+header .language-options a:hover{border-color:#b32c37}
+header .language-options a:focus-visible{outline:3px solid #ce7a83;outline-offset:2px}
+@media(max-width:650px){header .language-row{padding-top:5px;padding-bottom:2px}header #nav{top:100%;z-index:30}}
+
+/* Sistema visual azul, cinzento e branco - v2 */
+body.modern-site{--red:#1761a8;--ink:#22384b;--muted:#536c80;--line:#d3e1ed;--soft:#edf3f8;color:#22384b;background:#f7f9fc}
+body.modern-site .top{background:#e6eff8!important;color:#294e70!important;border-bottom:1px solid #cddded!important}
+body.modern-site .top a,body.modern-site .top .language-options a{color:#294e70!important}
+body.modern-site .top a:hover,body.modern-site .top .language-options a[aria-current=true]{color:#105492!important}
+body.modern-site header{background:#fffffff5;border-bottom:1px solid #d5e2ee;box-shadow:0 4px 20px #103b600b}
+body.modern-site .banner{background:radial-gradient(ellipse at 0 0,#d8eaf9 0,transparent 65%),linear-gradient(120deg,#eef5fb,#e7eef6)!important;color:#22384b!important;border-bottom:1px solid #ccdeee!important;position:relative}
+body.modern-site .banner::after{content:'';position:absolute;bottom:0;left:0;width:30%;height:4px;background:linear-gradient(90deg,#1761a8,#53a0cf);pointer-events:none}
+body.modern-site .banner .intro p:not(.eyebrow){color:#4b657a!important}
+body.modern-site .eyebrow,body.modern-site .banner .eyebrow,body.modern-site .num,body.modern-site nav a.active:not(.btn),body.modern-site .card a{color:#1761a8!important}
+body.modern-site .eyebrow{display:flex;align-items:center;gap:9px}
+body.modern-site .eyebrow::before{content:'';width:23px;height:3px;flex-shrink:0;border-radius:4px;background:#247cb8}
+body.modern-site .banner img.banner-image{content:url('banner-inicio-bancada-20261114.jpg');display:block;width:100%!important;max-width:100%;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;background:#fff!important;clip-path:none!important;transform:none!important;border-radius:18px!important;border:1px solid #d8e4ef!important;box-shadow:0 16px 36px #193f6412!important}
+body.modern-site .btn.primary{background:linear-gradient(130deg,#155896,#237ebc)!important;border-color:#1761a8!important;color:#fff!important;box-shadow:0 6px 16px #1761a830!important}
+body.modern-site .btn.primary:hover{background:#124d86!important;box-shadow:0 10px 24px #1761a83b!important}
+body.modern-site .banner .btn:not(.primary){background:#fff!important;color:#155b98!important;border-color:#acc7de!important}
+body.modern-site .btn{transition:transform .2s,box-shadow .2s,background .2s}
+body.modern-site main>.section:not(.soft):not(.coverage){background:#f8fafd}
+body.modern-site main>.section.soft,body.modern-site main>.coverage{background:linear-gradient(125deg,#eaf2f9,#f0f4f8)!important;border-color:#d5e2ee!important}
+body.modern-site .sectionhead{position:relative;padding-bottom:19px}
+body.modern-site .sectionhead::after{content:'';position:absolute;bottom:0;left:0;width:64px;height:4px;border-radius:4px;background:linear-gradient(90deg,#1761a8,#59b0d4)}
+body.modern-site .service-card,body.modern-site .card{background:#fff!important;border:1px solid #d4e2ee!important;border-top:3px solid #8fb7dc!important;box-shadow:0 8px 24px #173e6309;transition:transform .22s,box-shadow .22s,border-color .22s}
+body.modern-site .service-card:nth-child(3n+2){border-top-color:#398bc0!important}
+body.modern-site .service-card:nth-child(3n){border-top-color:#557797!important}
+body.modern-site .service-heading img{background:#e9f3fc!important;border:1px solid #d4e6f4;border-radius:12px}
+body.modern-site .card-link:hover{background:linear-gradient(145deg,#fff,#edf6fd)!important}
+body.modern-site .service-card:target{outline-color:#1761a8!important}
+body.modern-site .steps>div{background:#fff!important;border:1px solid #caddec!important;border-top:4px solid #3685bc!important;box-shadow:0 6px 22px #173e6308}
+body.modern-site .steps h3{color:#155b98}
+body.modern-site .cta{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(120deg,#123d65,#1761a8)!important;color:#fff!important;border:1px solid #194e7b;box-shadow:0 14px 32px #173e6323}
+body.modern-site .cta h2{color:#fff!important}body.modern-site .cta p{color:#dbeafa!important}
+body.modern-site .cta .btn.primary{background:#fff!important;color:#15558d!important;border-color:#fff!important}
+body.modern-site .cta::after{content:'';position:absolute;right:-50px;top:-85px;width:210px;height:210px;border-radius:50%;border:30px solid #ffffff09;pointer-events:none;z-index:-1}
+body.modern-site .faq-assistencia-list details{background:#fff!important;border-color:#ccdeec!important;box-shadow:0 4px 14px #173e6306}
+body.modern-site .faq-assistencia-list summary::marker{color:#1761a8!important}
+body.modern-site .faq-assistencia-list summary:hover,body.modern-site .faq-assistencia-list details[open]>summary{background:#eaf3fb;color:#155b98}
+body.modern-site .faq-assistencia-list details[open]{border-color:#7eadd3!important}
+body.modern-site .sidebar{background:#eaf1f8!important;border-color:#cbdfef!important}
+body.modern-site .sidebar button[aria-pressed=true]{background:#1761a8!important;color:#fff!important}
+body.modern-site .product{border-color:#cbdfef!important;box-shadow:0 12px 30px #173e6310}
+body.modern-site .product .price{color:#1761a8!important}
+body.modern-site .notice,body.modern-site .privacy-notice{background:#eaf2f9!important;border-color:#cddfed!important;color:#415f77!important}
+body.modern-site .zone-choice{border-top-color:#cfdfed;border-right-color:#cfdfed;border-bottom-color:#cfdfed}
+body.modern-site footer{background:#dde8f2!important;border-top:4px solid #95b9da!important;color:#3f5a71}
+body.modern-site footer a:hover{color:#1761a8}
+body.modern-site .brand span{color:#1761a8!important}
+body.modern-site :focus-visible{outline:3px solid #1761a8!important;outline-offset:4px}
+@media(hover:hover) and (pointer:fine){body.modern-site .service-card:hover{transform:translateY(-4px);border-color:#80add2!important;box-shadow:0 15px 32px #1761a81c!important}body.modern-site nav a:not(.btn){position:relative}body.modern-site nav a:not(.btn)::after{content:'';position:absolute;bottom:-7px;left:0;width:100%;height:2px;background:#1761a8;transform:scaleX(0);transform-origin:left;transition:transform .2s}body.modern-site nav a:not(.btn):hover::after,body.modern-site nav a.active:not(.btn)::after{transform:scaleX(1)}}
+@media(max-width:650px){body.modern-site .banner img.banner-image{border-radius:12px!important}body.modern-site .banner::after{width:50%}}
+@media(prefers-reduced-motion:reduce){body.modern-site *,body.modern-site *::before,body.modern-site *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}body.modern-site .service-card:hover{transform:none!important}}

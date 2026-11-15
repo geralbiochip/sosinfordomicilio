@@ -1,0 +1,6 @@
+body.modern-site .banner img.banner-image{content:url("banner-pc-leds-animado.webp")!important;width:100%!important;height:auto!important;object-fit:contain!important;transform:none!important}
+body.modern-site .banner img.banner-image.pc-motion-paused{content:url("banner-pc-leds-estatico.jpg")!important}
+.pc-motion-controls{grid-column:1/-1;display:flex;justify-content:flex-end;margin-top:8px}
+.pc-motion-toggle{font:inherit;font-size:16px;padding:10px 16px;border:1px solid #8eacc4;border-radius:8px;background:#fff;color:#22384b;cursor:pointer;min-height:44px}
+.pc-motion-toggle:focus-visible{outline:3px solid #1761a8;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){body.modern-site .banner img.banner-image{content:url("banner-pc-leds-estatico.jpg")!important}}
