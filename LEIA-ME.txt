@@ -1,11 +1,2 @@
-ATUALIZAÇÃO: FORMULÁRIOS E FICHA DO ARTIGO
-
-Carregar catalogo.html na raiz e os dois JavaScript na pasta assets, substituindo só os ficheiros de mesmo nome.
-Não apagar a pasta assets.
-Não substituir index.html ou contacto.html: as últimas perguntas frequentes e preços remotos ficam conservados.
-Não altera CSS global, mapa, imagem, navegação, número de botões WhatsApp ou destinos dos formulários.
-
-Formulários: sem campos adicionais, orientações na mensagem, validação com mensagens em português, seleção explícita do serviço, estado de envio acessível.
-Ficha HP 15: informação adicional num painel recolhido. Preço/especificações/foto mantidos. Dados não confirmados aparecem como a confirmar; não foram inventadas garantias, autonomia, acessórios ou disponibilidade.
-Não houve submissão de formulários nem envio de dados reais nos testes.
-Atualizar com Ctrl+F5 após publicar.
+ATUALIZACAO DA IMAGEM INICIAL
+Extraia e carregue o conteudo na raiz do repositorio sosinfordomicilio. Mantenha as pastas assets, en, es e fr. Substitua os ficheiros incluidos sem eliminar os restantes. Use este pacote em vez dos anteriores de imagem. Inclui quatro paginas iniciais e a ultima imagem enviada, sem recortes. Mantem idiomas junto dos contactos. Restantes paginas nao incluidas. Verificados caminhos, dimensoes e integridade do ZIP; sem teste visual em navegador nem publicacao no GitHub.

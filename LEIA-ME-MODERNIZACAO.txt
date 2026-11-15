@@ -1,0 +1,23 @@
+RENOVACAO VISUAL DO SITE - 14 NOVEMBRO 2026
+
+INSTALACAO
+1. Guarde uma copia de seguranca do repositorio antes de publicar.
+2. Extraia este ZIP.
+3. Carregue o conteudo na raiz do repositorio sosinfordomicilio, mantendo assets, en, es e fr.
+4. Substitua os ficheiros com o mesmo nome. NAO elimine os restantes recursos do site.
+5. Confirme as alteracoes no GitHub.
+Este e um pacote de atualizacao, nao um site autonomo. Requer os recursos que ja existem no repositorio.
+
+INCLUI
+24 paginas atualizadas: inicio, servicos, contactos, catalogo, sobre nos e privacidade em PT, EN, ES e FR.
+Nova folha de estilos assets/modern-2026.css.
+Ultima imagem enviada pelo utilizador para o inicio.
+
+ALTERACOES
+Cabecalho limpo com idiomas junto dos contactos; hero azul-grafite, tipografia e espacamento renovados; cartoes, FAQ, catalogo e rodape atualizados. Adaptacoes para ecra pequeno e reducao de movimento. Sem aumentar o padding ou a altura dos campos dos formularios.
+Conteudos, precos, formularios, scripts de filtragem e produto HP 15 preservados da base assets.zip fornecida. Nenhuma submissao de teste enviada.
+
+LIMITES E VERIFICACOES
+Validacao automatica das 24 paginas, caminhos da nova imagem, preservacao de formularios e scripts, produto INF-001 e foto, categorias e integridade do ZIP.
+Nao realizado teste visual em navegador nem publicacao. Este pacote usa como base o ultimo assets.zip disponivel nesta conversa; se o site foi editado posteriormente fora destes ficheiros, compare as alteracoes antes de substituir.
+A imagem inclui texto em portugues e foi mantida igual nas quatro linguas.
