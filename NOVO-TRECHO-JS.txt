@@ -1,0 +1,17 @@
+
+;(()=>{
+ function lowerHeaderNavigation(){
+  const header=document.querySelector('header');
+  const row=header&&header.querySelector('.navrow');
+  const nav=row&&row.querySelector('nav');
+  if(!row||!nav||row.querySelector('.header-navigation-stack'))return;
+  const stack=document.createElement('div');stack.className='header-navigation-stack';
+  const languages=document.querySelector('.top .language-options')||header.querySelector('.language-options');
+  const toggle=row.querySelector('#menu');
+  row.appendChild(stack);
+  if(languages)stack.appendChild(languages);
+  if(toggle)stack.appendChild(toggle);
+  stack.appendChild(nav);
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',lowerHeaderNavigation);else lowerHeaderNavigation();
+})();

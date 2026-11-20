@@ -1,0 +1,24 @@
+catalogo.html
+Equipamentos recondicionados para venda
+Encontre artigos informáticos recondicionados para trabalho, estudo e utilização doméstica. Consulte o catálogo por categoria para conhecer as opções disponíveis e escolher em função das suas necessidades e orçamento.
+Antes de comprar, peça informações sobre as características, o estado de conservação, os acessórios incluídos, a disponibilidade e as condições de venda do artigo. Esclarecemos as suas dúvidas para apoiar uma escolha informada.
+
+contacto.html
+Fale connosco sobre o que precisa
+Precisa de assistência, de um orçamento ou de informações sobre um equipamento recondicionado? Contacte a InforDomicílio por telefone, WhatsApp, email ou através do formulário desta página.
+Indique a sua localidade, a marca e o modelo do equipamento e descreva o problema ou o artigo que procura. Com essa informação, podemos avaliar o pedido e combinar o próximo passo com clareza. Não envie palavras-passe nem dados bancários.
+
+experiencia.html
+Experiência técnica com atendimento próximo
+A InforDomicílio reúne mais de 25 anos de experiência no apoio informático ao domicílio. Ajudamos particulares e pequenos negócios a resolver problemas, cuidar dos seus equipamentos e tirar melhor partido da tecnologia.
+O nosso compromisso é ouvir, avaliar e explicar: propomos intervenções ajustadas à utilização e ao estado de cada equipamento, apresentando as condições antes de avançar. Prestamos atendimento mediante marcação e apoio remoto quando adequado.
+
+index.html
+Assistência Informática ao Domicílio
+Assistência informática para particulares e pequenos negócios na Linha de Cascais, em Sintra, Oeiras e Lisboa, mediante marcação. Reparação e manutenção de computadores, melhorias de desempenho, redes Wi-Fi e apoio na utilização dos seus equipamentos.
+Analisamos cada pedido e explicamos as opções antes de avançar. Quando o problema o permite, também prestamos apoio remoto, com autorização e agendamento prévios.
+
+servicos.html
+Serviços de informática para casa e negócio
+Da reparação do computador à configuração da rede, prestamos apoio técnico adaptado aos equipamentos e às necessidades de cada cliente. Trabalhamos com portáteis, desktops, Windows, software, periféricos, segurança, cópias de segurança e migração de dados.
+Também avaliamos apoio remoto e desenvolvemos sites com alojamento e manutenção. Atendimento ao domicílio na Linha de Cascais, em Sintra, Oeiras e Lisboa, mediante marcação e confirmação da localização.

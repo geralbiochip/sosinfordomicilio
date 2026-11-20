@@ -1,2 +1,15 @@
-ATUALIZACAO DA IMAGEM INICIAL
-Extraia e carregue o conteudo na raiz do repositorio sosinfordomicilio. Mantenha as pastas assets, en, es e fr. Substitua os ficheiros incluidos sem eliminar os restantes. Use este pacote em vez dos anteriores de imagem. Inclui quatro paginas iniciais e a ultima imagem enviada, sem recortes. Mantem idiomas junto dos contactos. Restantes paginas nao incluidas. Verificados caminhos, dimensoes e integridade do ZIP; sem teste visual em navegador nem publicacao no GitHub.
+TROCA DE FOTOGRAFIAS - INICIO E SERVICOS - PT / EN / ES / FR
+Aplicar POR CIMA da ultima atualizacao multilingue, nao e um restauro completo do site.
+Primeiro anexo: substitui assets/inicio-escritorio-20261120.jpg, imagem do banner de Inicio nas quatro linguas.
+Segundo anexo: novo assets/servicos-escritorio-20261120.jpg, usado APENAS no banner superior de servicos.html nas quatro linguas.
+A imagem animada mais abaixo na pagina Servicos nao e substituida. O pacote NAO inclui banner-pc-leds-animado.webp ou o respetivo JPG estatico. Movimento continuo preservado, sem temporizador. Movimento reduzido e pausa/retoma ao clicar/Enter/Espaco na imagem animada continuam disponiveis. As duas novas fotografias sao estaticas e nao recebem os controlos de animacao.
+Troca do banner de Servicos feita pelo script ja carregado nas paginas: deteta o caminho da pagina, atualiza src e aplica regra que impede o CSS antigo de voltar a mostrar a animacao no banner superior. Rotulos alternativos em PT/EN/ES/FR. Texto incorporado nas fotografias preservado tal como nos anexos, nao traduzido.
+Mantidos header/barra de contactos fixos, idiomas junto ao menu e respetivos comportamentos da ultima atualizacao.
+Nao inclui HTML ou CSS de conteudos: preserva textos traduzidos, alinhamento dos cartoes, posicao dos titulos e formularios.
+
+APLICAR
+Faca backup dos ficheiros atuais. Extraia o ZIP e carregue os QUATRO ficheiros da pasta assets para assets no repositorio, substituindo os que ja existem. Nao apague outros ficheiros. Nao aplique pacotes antigos por cima.
+Aguarde publicacao e recarregue sem cache (Ctrl+F5). Se o script/CSS persistirem em cache, atualize nos HTML os parametros ?v= dos links a banner-pc-movimento.js e banner-pc-movimento.css para 20261120-3. Nao mude os nomes dos ficheiros.
+
+VERIFICACOES
+JPG copiados byte por byte dos anexos, CSS equilibrado, sintaxe JS e deteccao de caminhos por Node, ZIP integro e ausencia de ficheiros de animacao no pacote. Sem teste visual em navegador, sem publicacao GitHub.

@@ -4,3 +4,28 @@ body.modern-site .banner img.banner-image.pc-motion-paused{content:url("banner-p
 .pc-motion-toggle{font:inherit;font-size:16px;padding:10px 16px;border:1px solid #8eacc4;border-radius:8px;background:#fff;color:#22384b;cursor:pointer;min-height:44px}
 .pc-motion-toggle:focus-visible{outline:3px solid #1761a8;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){body.modern-site .banner img.banner-image{content:url("banner-pc-leds-estatico.jpg")!important}}
+
+/* Fotografias dos banners sem substituicao por animacao via CSS. */
+body.modern-site main>.banner img.banner-image[data-site-static-photo]{content:normal !important;object-fit:contain !important;object-position:center !important;width:100% !important;height:auto !important;padding:0 !important;}
+/* Bloco de servicos: imagem a esquerda e texto a direita. */
+body.modern-site main .servicos-apresentacao{grid-template-columns:1fr 1.15fr;}
+body.modern-site main .servicos-apresentacao>picture{grid-column:1;grid-row:1;}
+body.modern-site main .servicos-apresentacao>div{grid-column:2;grid-row:1;}
+/* Rodape em tres colunas, com uma faixa legal independente. */
+body.modern-site footer>.wrap{display:grid !important;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr);align-items:start;gap:24px 36px !important;}
+body.modern-site footer .footer-brand-column,
+body.modern-site footer .footer-contact-column,
+body.modern-site footer .footer-navigation-column{min-width:0;}
+body.modern-site footer .footer-column-title{font-size:18px;line-height:1.35;font-weight:700;margin:0 0 14px;letter-spacing:0;color:#22384b;}
+body.modern-site footer p{margin:0 0 10px;}
+body.modern-site footer a[href^="mailto:"]{overflow-wrap:anywhere;}
+body.modern-site footer .brand img{max-width:100% !important;width:280px !important;height:auto !important;max-height:none !important;}
+body.modern-site footer .footer-legal{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 !important;padding-top:20px !important;border-top:1px solid #bbcfdf;}
+@media(max-width:800px){
+ body.modern-site main .servicos-apresentacao{grid-template-columns:1fr;}
+ body.modern-site main .servicos-apresentacao>picture{grid-column:1;grid-row:1;}
+ body.modern-site main .servicos-apresentacao>div{grid-column:1;grid-row:2;}
+ body.modern-site footer>.wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px !important;}
+ body.modern-site footer .footer-brand-column{grid-column:1/-1;}
+}
+@media(max-width:520px){body.modern-site footer>.wrap{grid-template-columns:1fr;}body.modern-site footer .footer-brand-column{grid-column:auto;}}

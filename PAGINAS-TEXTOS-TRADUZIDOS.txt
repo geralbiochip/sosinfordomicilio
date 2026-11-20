@@ -1,0 +1,20 @@
+en/catalogo.html — Refurbished IT equipment for sale
+en/contacto.html — Tell us what you need
+en/experiencia.html — Technical experience with a personal approach
+en/index.html — IT support at your home
+en/servicos.html — IT services for your home and business
+es/catalogo.html — Equipos informáticos reacondicionados en venta
+es/contacto.html — Cuéntenos qué necesita
+es/experiencia.html — Experiencia técnica y atención cercana
+es/index.html — Asistencia informática a domicilio
+es/servicos.html — Servicios informáticos para su hogar y negocio
+fr/catalogo.html — Matériel informatique reconditionné à vendre
+fr/contacto.html — Parlez-nous de votre besoin
+fr/experiencia.html — L’expérience technique et un service de proximité
+fr/index.html — Assistance informatique à domicile
+fr/servicos.html — Services informatiques pour votre domicile et votre activité
+catalogo.html — Equipamentos recondicionados para venda
+contacto.html — Fale connosco sobre o que precisa
+experiencia.html — Experiência técnica com atendimento próximo
+index.html — Assistência Informática ao Domicílio
+servicos.html — Serviços de informática para casa e negócio
