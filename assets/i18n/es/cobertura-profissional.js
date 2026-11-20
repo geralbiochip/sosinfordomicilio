@@ -4,7 +4,7 @@ Email: ${d.get('email')}
 Telefone: ${d.get('telefone')||'Não indicado'}
 Localidade: ${d.get('local')}
 Serviço: ${d.get('servico')}
-Mensagem: ${d.get('mensagem')}`;window.open('https://wa.me/351926014310?text='+encodeURIComponent(text),'_blank','noopener');return;}status.textContent="Enviando…";const buttons=form.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);try{const r=await fetch(form.action,{method:'POST',body:d,headers:{Accept:'application/json'}});if(!r.ok)throw Error();status.textContent="El servicio de formularios ha aceptado la solicitud. Gracias por contactar.";form.reset();}catch(err){status.textContent="No se pudo confirmar el envío. Inténtalo de nuevo o escribe a geral.biochip@gmail.com.";}finally{buttons.forEach(b=>b.disabled=false);}});
+Mensagem: ${d.get('mensagem')}`;window.open('https://wa.me/351926014310?text='+encodeURIComponent(text),'_blank','noopener');return;}status.textContent="Enviando…";const buttons=form.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);try{const r=await fetch(form.action,{method:'POST',body:d,headers:{Accept:'application/json'}});if(!r.ok)throw Error();status.textContent="El servicio de formularios ha aceptado la solicitud. Gracias por contactar.";form.reset();}catch(err){status.textContent="No se pudo confirmar el envío. Inténtalo de nuevo o escribe a sosinfordomicilio@gmail.com.";}finally{buttons.forEach(b=>b.disabled=false);}});
 const map=document.querySelector('.dynamic-map');if(map){const choices=[...document.querySelectorAll('[data-zone]')];let pinned=null;const coarse=matchMedia('(hover: none)').matches;
 
 const revealStates=[];
