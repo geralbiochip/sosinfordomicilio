@@ -10,7 +10,7 @@
    if(langs)stack.appendChild(langs);if(toggle)stack.appendChild(toggle);stack.appendChild(nav);
   }
   if(header&&top&&!document.querySelector('.site-sticky-shell')){
-   const shell=document.createElement('div');shell.className='site-sticky-shell';top.before(shell);shell.append(top,header);
+   const shell=document.createElement('div');shell.className='site-sticky-shell';header.before(shell);shell.appendChild(header);
    const measure=()=>document.documentElement.style.setProperty('--site-sticky-height',shell.getBoundingClientRect().height+'px');
    if('ResizeObserver'in window)new ResizeObserver(measure).observe(shell);
    window.addEventListener('resize',measure);measure();

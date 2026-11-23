@@ -1,0 +1,14 @@
+/* Barra de contactos no fluxo normal; apenas o header continua sticky. */
+body.modern-site>.top{position:static!important;top:auto!important;bottom:auto!important;}
+body.modern-site .site-sticky-shell{position:sticky!important;top:0;z-index:100;}
+body.modern-site .site-sticky-shell>header{position:static!important;}
+body.modern-site .seo-content{padding-block:36px;}
+body.modern-site .seo-content h2{font-size:clamp(24px,2.3vw,30px);line-height:1.3;margin:0 0 22px;}
+body.modern-site .seo-content-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+body.modern-site .seo-content-grid>article{background:#fff;border:1px solid #d2e1ee;border-radius:14px;padding:24px;min-width:0;}
+body.modern-site .seo-content h3{font-size:20px;line-height:1.4;margin:0 0 12px;}
+body.modern-site .seo-content p{font-size:17px;line-height:1.75;margin:0 0 16px;}
+body.modern-site .seo-content a{color:#155c9b;font-weight:650;text-decoration:underline;text-underline-offset:3px;}
+body.modern-site .seo-content a:focus-visible{outline:3px solid #1761a8;outline-offset:4px;}
+body.modern-site .seo-content .actions{margin-top:22px;}
+@media(max-width:850px){body.modern-site .seo-content-grid{grid-template-columns:1fr;}}
