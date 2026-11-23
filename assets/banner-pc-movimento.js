@@ -41,7 +41,7 @@
    }
   }
   const script=document.querySelector('script[src*="banner-pc-movimento.js"]');if(!script)return;
-  const base=script.src;const path=location.pathname;
+  const base=script.src;const cleanPath=location.pathname.replace(/\/+$/,'');const leaf=cleanPath.split('/').pop();const path=['servicos','contacto','catalogo','experiencia','privacidade'].includes(leaf)?cleanPath+'.html':location.pathname;
   const isHome=path.endsWith('/')||/(^|\/)index\.html$/i.test(path);
   const isServices=/(^|\/)servicos\.html$/i.test(path);
   const isContacts=/(^|\/)contacto\.html$/i.test(path);

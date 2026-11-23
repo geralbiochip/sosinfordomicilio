@@ -1,0 +1,31 @@
+body.modern-site footer.site-footer{--sf-ink:#28576e;--sf-accent:#14649d;--sf-line:#d4e2ed;background:#f3f8fc!important;color:var(--sf-ink)!important;padding:0!important;margin-top:0;border-top:1px solid var(--sf-line)!important;font:400 16px/1.7 system-ui,sans-serif}
+body.modern-site footer.site-footer>.wrap.sf-wrap{display:block!important;width:min(100% - 48px,1320px)!important;max-width:1320px!important;padding:0!important;margin:0 auto!important}
+body.modern-site footer.site-footer .sf-cta{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:32px 0 36px;border-bottom:1px solid var(--sf-line)}
+body.modern-site footer.site-footer .sf-cta h2{color:var(--sf-accent);font-size:26px;font-weight:750;line-height:1.3;margin:0 0 8px;letter-spacing:-.35px}
+body.modern-site footer.site-footer p{font-size:16px;line-height:1.7;margin:0 0 16px;color:var(--sf-ink)}
+body.modern-site footer.site-footer .sf-cta p{margin:0}
+body.modern-site footer.site-footer a{color:var(--sf-accent);text-decoration:none}
+body.modern-site footer.site-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+body.modern-site footer.site-footer a:focus-visible{outline:3px solid #14649d;outline-offset:4px}
+body.modern-site footer.site-footer .sf-cta .sf-button{display:inline-flex;flex:none;align-items:center;justify-content:center;min-height:54px;padding:12px 24px;border-radius:8px;background:var(--sf-accent);color:#fff;font-size:16px;font-weight:700;line-height:1.4;text-decoration:none}
+body.modern-site footer.site-footer .sf-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.25fr);gap:36px;padding:40px 0 44px}
+body.modern-site footer.site-footer .sf-grid>section{min-width:0;margin:0;padding:0;background:none;border:0;box-shadow:none}
+body.modern-site footer.site-footer .sf-brand{display:block!important;max-width:100%;width:300px!important;margin:0 0 16px!important;padding:0}
+body.modern-site footer.site-footer .sf-brand img{display:block;width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;object-fit:contain}
+body.modern-site footer.site-footer .sf-title{font-size:16px;font-weight:750;line-height:1.4;color:var(--sf-accent);margin:2px 0 16px;letter-spacing:0}
+body.modern-site footer.site-footer .sf-zone-title{margin-top:20px;margin-bottom:8px}
+body.modern-site footer.site-footer .sf-links{list-style:none;padding:0;margin:0}
+body.modern-site footer.site-footer .sf-links>li{padding:0;margin:0 0 12px;list-style:none}
+body.modern-site footer.site-footer .sf-links a{display:inline-block;font-weight:650;line-height:1.6}
+body.modern-site footer.site-footer .sf-coverage{display:inline-block;text-decoration:underline;text-underline-offset:3px}
+body.modern-site footer.site-footer .sf-phone{display:inline-block;font-size:clamp(23px,2vw,28px);font-weight:800;line-height:1.35;white-space:nowrap;margin:0 0 6px}
+body.modern-site footer.site-footer .sf-phone-note,body.modern-site footer.site-footer .sf-bottom p{font-size:13px!important;line-height:1.6!important}
+body.modern-site footer.site-footer .sf-phone-note{margin:0 0 20px}
+body.modern-site footer.site-footer .sf-email{overflow-wrap:anywhere}
+body.modern-site footer.site-footer .sf-contact-note{margin-top:22px}
+body.modern-site footer.site-footer .sf-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:22px 0;border-top:1px solid var(--sf-line)}
+body.modern-site footer.site-footer .sf-bottom p{margin:0}
+body.modern-site footer.site-footer .sf-legal{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px 20px}
+body.modern-site footer.site-footer .sf-legal a{font-size:13px;font-weight:600;line-height:1.6}
+@media(max-width:1050px){body.modern-site footer.site-footer .sf-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 40px}body.modern-site footer.site-footer .sf-bottom{flex-direction:column;gap:14px}body.modern-site footer.site-footer .sf-legal{justify-content:flex-start}}
+@media(max-width:600px){body.modern-site footer.site-footer>.wrap.sf-wrap{width:calc(100% - 36px)!important}body.modern-site footer.site-footer .sf-cta{align-items:flex-start;flex-direction:column;gap:18px;padding:26px 0}body.modern-site footer.site-footer .sf-cta h2{font-size:23px}body.modern-site footer.site-footer .sf-grid{grid-template-columns:1fr;gap:28px;padding:30px 0}body.modern-site footer.site-footer .sf-brand{width:280px!important}}

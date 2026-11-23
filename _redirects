@@ -1,1 +1,5 @@
-/loja.html /servicos.html 301
+/sosinfordomicilio/* /:splat 301
+/loja /catalogo 301
+/en/loja /en/catalogo 301
+/es/loja /es/catalogo 301
+/fr/loja /fr/catalogo 301
