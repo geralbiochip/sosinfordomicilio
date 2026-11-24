@@ -1,0 +1,17 @@
+body.modern-site header .header-brand-contact{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:0 1 486px;width:486px;max-width:100%;min-width:0;align-self:center;}
+body.modern-site header .header-brand-contact>.brand{flex:0 1 360px!important;flex-basis:auto!important;max-width:calc(100% - 126px)!important;min-width:0!important;}
+body.modern-site header .header-brand-contact>.brand img{max-width:100%!important;height:auto!important;}
+body.modern-site header .header-contact-qr{flex:0 0 114px;width:114px;align-self:center;}
+body.modern-site header .header-qr-button{appearance:none;background:#fff;color:#164d76;border:0;padding:0;margin:0;font:inherit;cursor:pointer;display:block;width:114px;border-radius:5px;box-shadow:0 0 0 1px #ccdce8;overflow:hidden;}
+body.modern-site header .header-qr-button img{display:block!important;width:114px!important;height:114px!important;max-width:none!important;object-fit:contain!important;image-rendering:pixelated;}
+body.modern-site header .header-qr-button span{display:block;font-size:11px;line-height:1.4;padding:3px 2px 5px;}
+body.modern-site .header-qr-button:focus-visible,body.modern-site .contact-qr-dialog a:focus-visible,body.modern-site .contact-qr-dialog button:focus-visible{outline:3px solid #1983be;outline-offset:4px;}
+body.modern-site .contact-qr-dialog{border:1px solid #c9dce9;border-radius:18px;background:#fff;color:#183e5d;padding:24px;max-width:min(94vw,460px);max-height:92dvh;overflow:auto;text-align:center;box-sizing:border-box;}
+body.modern-site .contact-qr-dialog::backdrop{background:#102a43aa;}
+body.modern-site .contact-qr-dialog h2{font-size:23px;line-height:1.3;margin:0 30px 10px;}
+body.modern-site .contact-qr-dialog .qr-large{display:block;width:342px;height:auto;max-width:100%;margin:12px auto;background:#fff;}
+body.modern-site .contact-qr-dialog p{font-size:15px;line-height:1.6;margin:8px 0;overflow-wrap:anywhere;}
+body.modern-site .contact-qr-dialog a{color:#155c8c;text-decoration:underline;text-underline-offset:3px;}
+body.modern-site .contact-qr-dialog .qr-download{display:inline-block;background:#155c8c;color:#fff;border:1px solid #155c8c;border-radius:8px;text-decoration:none;font-weight:600;padding:10px 16px;margin-top:12px;}
+body.modern-site .contact-qr-dialog .qr-close{display:block;margin:16px auto 0;min-height:44px;border:1px solid #a9c4d9;border-radius:8px;background:#fff;padding:8px 20px;color:#164e78;cursor:pointer;font:inherit;}
+@media(max-width:450px){body.modern-site .contact-qr-dialog{padding:18px 14px;}body.modern-site header .header-brand-contact{flex-basis:100%;}}

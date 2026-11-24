@@ -41,17 +41,22 @@
    }
   }
   const script=document.querySelector('script[src*="banner-pc-movimento.js"]');if(!script)return;
-  const base=script.src;const cleanPath=location.pathname.replace(/\/+$/,'');const leaf=cleanPath.split('/').pop();const path=['servicos','contacto','catalogo','experiencia','privacidade'].includes(leaf)?cleanPath+'.html':location.pathname;
-  const isHome=path.endsWith('/')||/(^|\/)index\.html$/i.test(path);
-  const isServices=/(^|\/)servicos\.html$/i.test(path);
-  const isContacts=/(^|\/)contacto\.html$/i.test(path);
+  const base=script.src;
+  const path=location.pathname.replace(/\/+$/,'');
+  const leaf=(path.split('/').pop()||'').replace(/\.html$/i,'').toLowerCase();
+  const isHome=!leaf||['index','pt','en','es','fr'].includes(leaf);
+  const photos={experiencia:['sobre-nos-maquete-20261123.jpg',1408,768],contacto:['contactos-escritorio-20261120.jpg',1376,768],catalogo:['catalogo-maquete-20261123.jpg',1376,768],servicos:['servicos-escritorio-20261120.jpg',1376,768]};
+  const alts={
+   pt:{experiencia:'Maquete junto ao mar com computador em forma de casa e referência a mais de 25 anos de experiência',contacto:"Ilustração da área de contactos InforDomicílio com telefone, monitores e painel de localização e cobertura.",catalogo:'Maquete com portáteis, desktop, monitor e equipamentos recondicionados',servicos:"Ilustração dos serviços InforDomicílio com bancada de reparação, computadores e painéis de assistência informática."},
+   en:{experiencia:'Seaside model with a house-shaped computer and a reference to over 25 years of experience',contacto:"Illustration of the InforDomicílio contact area with a telephone, monitors and a location and coverage panel.",catalogo:'Model with laptops, a desktop, monitor and refurbished IT equipment',servicos:"Illustration of InforDomicílio services with a repair bench, computers and IT support panels."},
+   es:{experiencia:'Maqueta junto al mar con ordenador en forma de casa y referencia a más de 25 años de experiencia',contacto:"Ilustración del área de contacto InforDomicílio con teléfono, monitores y panel de ubicación y cobertura.",catalogo:'Maqueta con portátiles, ordenador de sobremesa, monitor y equipos reacondicionados',servicos:"Ilustración de los servicios InforDomicílio con banco de reparación, ordenadores y paneles de asistencia informática."},
+   fr:{experiencia:'Maquette en bord de mer avec ordinateur en forme de maison et mention de plus de 25 ans d’expérience',contacto:"Illustration de l’espace de contact InforDomicílio avec téléphone, écrans et panneau de localisation et de couverture.",catalogo:'Maquette avec ordinateurs portables, ordinateur fixe, écran et matériel reconditionné',servicos:"Illustration des services InforDomicílio avec établi de réparation, ordinateurs et panneaux d’assistance informatique."}
+  };
   const hero=document.querySelector('.banner img.banner-image');
-  const alts={pt:['Placa InforDomicílio com apresentação e contactos','Serviços InforDomicílio — escritório e apresentação dos serviços informáticos','Contacte a InforDomicílio — telefone e email na parede de vidro de um escritório'],en:['InforDomicílio plaque with business information and contact details','InforDomicílio services — office and overview of IT services','Contact InforDomicílio — phone and email displayed on an office glass wall'],es:['Placa de InforDomicílio con presentación y datos de contacto','Servicios de InforDomicílio — oficina y presentación de servicios informáticos','Contacte con InforDomicílio — teléfono y email en la pared de cristal de una oficina'],fr:['Plaque InforDomicílio avec présentation et coordonnées','Services InforDomicílio — bureau et présentation des services informatiques','Contactez InforDomicílio — téléphone et email sur la paroi vitrée d’un bureau']}[lang];
-  if(hero&&(isHome||isServices||isContacts)){
+  if(hero&&(isHome||photos[leaf])){
    hero.dataset.siteStaticPhoto='true';
-   const file=isHome?'inicio-escritorio-20261120.jpg':isServices?'servicos-escritorio-20261120.jpg':'contactos-escritorio-20261120.jpg';
-   hero.src=new URL(file,base).href;
-   if(alts)hero.alt=alts[isHome?0:isServices?1:2];
+   if(isHome){hero.src=new URL('inicio-escritorio-20261120.jpg',base).href;}
+   else{const photo=photos[leaf];hero.src=new URL(photo[0],base).href;hero.width=photo[1];hero.height=photo[2];hero.alt=(alts[lang]||alts.pt)[leaf];}
    hero.classList.remove('pc-motion-paused');['role','tabindex','aria-pressed','aria-label','title','data-controllable-animation'].forEach(a=>hero.removeAttribute(a));
   }
   const reduce=matchMedia('(prefers-reduced-motion: reduce)');
@@ -72,4 +77,28 @@
   });
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
+})();
+
+
+(()=>{
+ if(location.protocol!=='file:')return;
+ const script=document.querySelector('script[src*="banner-pc-movimento.js"]');if(!script)return;
+ const root=new URL('../',script.src),pages=new Set(['index','servicos','contacto','catalogo','experiencia','privacidade','loja','404']);
+ function localHref(href,baseURI){
+  if(!href||href.trim().startsWith('#'))return href;
+  const h=href.trim();if(/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(h)&&!h.startsWith('file:'))return href;
+  let target;try{target=h.startsWith('/')&&!h.startsWith('//')?new URL(h.slice(1),root):new URL(h,baseURI);}catch(e){return href;}
+  if(target.protocol!=='file:'||!target.href.startsWith(root.href))return href;
+  const leaf=target.pathname.split('/').pop();if(target.pathname.endsWith('/'))target.pathname+='index.html';else if(['en','es','fr'].includes(leaf))target.pathname+='/index.html';else if(pages.has(leaf))target.pathname+='.html';return target.href;
+ }
+ function fix(a){const h=a.getAttribute('href'),next=localHref(h,document.baseURI);if(next!==h)a.setAttribute('href',next);}
+ function repair(){document.querySelectorAll('a[href],area[href]').forEach(fix);}
+ function setupLocal(){repair();['click','auxclick'].forEach(type=>document.addEventListener(type,e=>{const a=e.target.closest&&e.target.closest('a[href],area[href]');if(a)fix(a);},true));new MutationObserver(repair).observe(document.body,{childList:true,subtree:true});}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setupLocal);else setupLocal();
+})();
+
+(()=>{
+ if(document.querySelector('script[data-atendimento-loader]'))return;
+ const entry=document.currentScript||document.querySelector('script[src*="banner-pc-movimento.js"]');if(!entry)return;
+ const extra=document.createElement('script');extra.src=new URL('atualizacao-atendimento-3d.js?v=20261123-7',entry.src).href;extra.dataset.atendimentoLoader='true';document.head.append(extra);
 })();
