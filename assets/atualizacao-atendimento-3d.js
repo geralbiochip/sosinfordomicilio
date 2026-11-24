@@ -91,7 +91,9 @@
  const entry=document.currentScript||document.querySelector('script[src*="atualizacao-atendimento-3d.js"]');if(!entry)return;
  const base=entry.src;
  function setupQR(){
-  if(document.querySelector('.header-contact-qr'))return;
+  if(document.querySelector('.header-contact-qr')){
+ const b=document.querySelector('.header-qr-button'),d=document.querySelector('#contact-qr-dialog'),c=d&&d.querySelector('.qr-close');
+ if(b&&d){b.addEventListener('click',()=>{if(d.showModal)d.showModal();});if(c)c.addEventListener('click',()=>{d.close();b.focus();});}return;}
   const brand=document.querySelector('header .navrow>.brand');if(!brand)return;
   const lang=(document.documentElement.lang||'pt').slice(0,2);
   const labels={pt:['Ler / ampliar','Guardar contacto','Leia o QR com a câmara de outro dispositivo ou guarde o contacto diretamente.','Guardar contacto (.vcf)','Fechar','Ampliar QR Code e guardar contacto'],en:['Scan / enlarge','Save contact','Scan the QR with another device or save the contact directly.','Save contact (.vcf)','Close','Enlarge QR code and save contact'],es:['Leer / ampliar','Guardar contacto','Lea el QR con otro dispositivo o guarde el contacto directamente.','Guardar contacto (.vcf)','Cerrar','Ampliar código QR y guardar contacto'],fr:['Lire / agrandir','Enregistrer le contact','Scannez le QR avec un autre appareil ou enregistrez directement le contact.','Enregistrer le contact (.vcf)','Fermer','Agrandir le QR et enregistrer le contact']}[lang]||['Ler / ampliar','Guardar contacto','Leia o QR com outro dispositivo ou guarde o contacto diretamente.','Guardar contacto (.vcf)','Fechar','Ampliar QR Code e guardar contacto'];
