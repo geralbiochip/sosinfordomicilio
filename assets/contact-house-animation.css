@@ -1,0 +1,10 @@
+
+.contact-house-animation{width:100%;max-width:510px;margin:32px auto 0;position:relative;text-align:center}
+.contact-house-animation .casa-visual{width:100%;max-width:510px;aspect-ratio:1;mix-blend-mode:multiply}
+.contact-house-animation .casa-controls{margin-top:5px}
+.contact-house-animation .casa-controls button{font-size:11px;padding:6px 12px;min-height:32px;background:white}
+.contact-house-animation:before{pointer-events:none}
+@media(max-width:760px){.contact-house-animation{max-width:360px;margin:24px auto}.contact-house-animation .casa-visual{max-width:360px}}
+@media(prefers-reduced-motion:reduce){.contact-house-animation:before{animation:none!important}}
+
+.seo-services-link{margin:28px 0 0;text-align:center}

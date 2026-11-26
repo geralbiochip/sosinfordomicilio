@@ -1,6 +1,6 @@
 
 (function() {
-  var CAMINHO_IMAGEM = 'assets/animacao-casa/casa-inteira.png'; // Altera para 'img/casa-inteira.png' se estiver numa subpasta
+  var CAMINHO_IMAGEM = new URL('animacao-casa/casa-inteira.png', document.currentScript.src).href; // Altera para 'img/casa-inteira.png' se estiver numa subpasta
 
   var canvas = document.getElementById('infordomicilioCanvas');
   if (!canvas || !canvas.getContext) return;
