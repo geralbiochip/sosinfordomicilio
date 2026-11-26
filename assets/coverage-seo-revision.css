@@ -1,0 +1,12 @@
+
+.nx-coverage-below{padding:32px 0;background:white}
+.nx-coverage-card{padding:27px 30px;border:1px solid #d9e6ef;border-radius:14px;background:#eff6fa;box-shadow:0 8px 28px #0b2d4408}
+.nx-coverage-card h2{font-size:25px;color:#123247;margin-bottom:15px}
+.nx-coverage-card p{font-size:14px;line-height:1.85;color:#526d7d;margin-bottom:19px;max-width:1080px}
+.nx-coverage-card .btn{background:white;color:#14384e;border-color:#bed5e2}
+.nx-overlay-content>.nx-intro-extra{grid-column:1/-1;max-width:1000px}
+.service-breadcrumbs{padding:18px 0;font-size:12px;color:#587384;background:#f5f9fb;border-bottom:1px solid #e3edf3}
+.service-breadcrumbs .wrap{display:flex;flex-wrap:wrap;gap:8px}
+.service-breadcrumbs a{color:#176a7f;text-decoration:none}
+@media(max-width:760px){.nx-coverage-below{padding:25px 0}.nx-coverage-card{padding:23px}.nx-coverage-card h2{font-size:23px}}
+@media(max-width:480px){.nx-coverage-card{padding:20px}.nx-coverage-card p{font-size:13px}.nx-coverage-card .btn{width:100%}}
