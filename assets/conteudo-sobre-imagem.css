@@ -1,0 +1,31 @@
+
+/* Conteúdo integral sobre as aberturas, sem caixas de altura máxima. */
+body.nova-site .nx-visual,body.nova-site.nova-index .nx-integrated-hero .nx-visual,body.nova-site.nova-catalogo .nx-visual,body.nova-site .web-hero{height:600px!important;min-height:600px!important;max-height:none!important}
+body.nova-site .nx-heading,body.nova-site.nova-index .nx-integrated-hero .nx-heading{padding-block:32px!important;justify-content:flex-start!important}
+body.nova-site.nova-index .nx-heading h1{font-size:42px!important;line-height:1.07!important;max-width:900px}
+body.nova-site.nova-index .nx-heading .eyebrow{margin-bottom:12px}
+.nx-overlay-content{display:grid;grid-template-columns:1fr 1fr;gap:16px 30px;max-width:1010px;margin-top:20px}
+.nx-overlay-content>p{font-size:12px;line-height:1.8;color:#e0edf5;margin:0}
+body.nova-site .nx-overlay-content .nx-hero-zone{grid-column:1/-1;max-width:none;margin:0!important;padding:16px 20px!important;background:#08263dd9;border:1px solid #83adbf66;border-radius:10px;color:white;backdrop-filter:blur(5px)}
+.nx-overlay-content .nx-hero-zone h2{font-size:20px;color:white;margin-bottom:10px}
+.nx-overlay-content .nx-hero-zone p{font-size:12px;line-height:1.7;color:#deebf5;margin-bottom:12px}
+.nx-overlay-content .nx-hero-zone .btn{min-height:34px;padding:7px 12px;font-size:11px;color:white;border-color:#86aabb}
+.nx-overlay-content>.actions{grid-column:1/-1;margin:0;gap:10px}
+.nx-overlay-content>.actions .btn{min-height:40px;font-size:12px;padding:9px 17px}
+.nx-overlay-content>.actions .btn:not(.primary){color:white;background:#0a293edb;border-color:#86aabb}
+body.nova-site .web-hero{display:flex!important;align-items:center;padding:30px 0!important}
+body.nova-site .web-hero .web-hero-grid{grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+body.nova-site .web-hero h1{font-size:40px!important;line-height:1.07;letter-spacing:-.04em;margin-bottom:20px}
+body.nova-site .web-hero .eyebrow{margin-bottom:15px}
+body.nova-site .web-hero .web-lead{font-size:16px;line-height:1.65;margin-bottom:16px;color:#f1fbff}
+body.nova-site .web-hero p{font-size:13px;color:#ccdfeb;line-height:1.75}
+body.nova-site .web-hero .actions{margin:20px 0 15px;gap:10px}
+body.nova-site .web-hero .web-note{font-size:11px;margin-bottom:0}
+body.nova-site .web-hero .web-demo{transform:none}
+body.nova-site .web-hero .web-demo-content{padding:25px}
+body.nova-site .web-hero .web-demo-content p{font-size:32px;color:#173d52;line-height:1.12;margin:16px 0 20px}
+body.nova-site .web-hero .web-demo-caption{color:#526e7f;font-size:9px;line-height:1.5}
+body.nova-site.nova-index .nx-integrated-hero .nx-visual:after{background:linear-gradient(90deg,#041a2eef 0%,#061e32dc 65%,#071e3080 100%)}
+@media(max-width:1099px){body.nova-site.nova-index .nx-integrated-hero .nx-visual,body.nova-site .web-hero{height:auto!important;min-height:600px!important}body.nova-site.nova-index .nx-integrated-hero .nx-heading{height:auto!important;min-height:600px!important}.nx-overlay-content{max-width:100%;gap:16px 24px}body.nova-site .web-hero .web-hero-grid{gap:25px}}
+@media(max-width:760px){body.nova-site .nx-visual,body.nova-site.nova-catalogo .nx-visual{height:360px!important;min-height:360px!important}body.nova-site.nova-index .nx-integrated-hero .nx-visual,body.nova-site .web-hero{height:auto!important;min-height:0!important}body.nova-site.nova-index .nx-integrated-hero .nx-heading{height:auto!important;min-height:0!important;padding-block:30px!important}body.nova-site.nova-index .nx-heading h1{font-size:34px!important}.nx-overlay-content{grid-template-columns:1fr;margin-top:20px;gap:16px}.nx-overlay-content .nx-hero-zone,.nx-overlay-content>.actions{grid-column:1}.nx-overlay-content>p,.nx-overlay-content .nx-hero-zone p{font-size:13px;line-height:1.8}body.nova-site .web-hero .web-hero-grid{grid-template-columns:1fr;gap:30px}body.nova-site .web-hero{padding:30px 0!important}body.nova-site .web-hero h1{font-size:34px!important}body.nova-site .web-hero .web-demo{max-width:500px;margin:0 auto;width:100%}}
+@media(max-width:480px){body.nova-site.nova-index .nx-heading h1{font-size:30px!important}.nx-overlay-content>.actions{width:100%}.nx-overlay-content>.actions .btn{width:100%}body.nova-site .nx-overlay-content .nx-hero-zone{padding:16px!important}body.nova-site .web-hero h1{font-size:31px!important}body.nova-site .web-hero .actions .btn{width:100%}}

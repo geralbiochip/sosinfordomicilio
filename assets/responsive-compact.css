@@ -1,0 +1,40 @@
+
+/* Altura da fotografia independente do volume de texto. */
+html{scroll-padding-top:120px;scrollbar-gutter:stable}body{overflow-x:clip}
+.nova-site .nx-visual,.nova-site.nova-index .nx-integrated-hero .nx-visual,.nova-site.nova-catalogo .nx-visual{height:360px!important;min-height:360px!important;max-height:360px!important}
+.nova-site .nx-heading,.nova-site.nova-index .nx-integrated-hero .nx-heading{height:100%!important;min-height:0!important;padding-block:42px!important;justify-content:flex-start!important;align-items:flex-start}
+.nova-site .nx-heading h1,.nova-site.nova-catalogo .nx-heading h1{font-size:clamp(32px,3.5vw,49px)!important;line-height:1.08!important;max-width:850px;overflow-wrap:break-word}
+.nova-site .nx-heading .eyebrow{margin-bottom:18px}
+.nova-site .web-hero{height:360px!important;min-height:360px!important;max-height:360px!important;display:block!important;padding:42px 0!important}
+.nova-site .web-hero h1{font-size:clamp(32px,3.5vw,49px);max-width:850px;margin:0;line-height:1.08}
+.nx-readable-info .nx-info-row{gap:20px 36px;padding-block:28px}
+.nx-readable-info .nx-hero-zone{grid-column:1/-1;max-width:none;margin:0!important;padding:20px 22px!important;background:#10354c;border:1px solid #54788b;border-radius:10px;color:white}
+.nx-readable-info .nx-hero-zone h2{font-size:21px;margin-bottom:12px;color:white}
+.nx-readable-info .nx-hero-zone p{font-size:13px;line-height:1.8;color:#c9dde9;margin-bottom:15px}
+.nx-readable-info .nx-hero-zone .btn{font-size:11px;color:white;border-color:#80a1b3;min-height:36px;padding:8px 13px}
+.nx-readable-info .actions{grid-column:1/-1;margin:0}
+.web-intro-readable{background:#f5f9fb}
+.web-intro-readable p{font-size:14px;color:#526b7b}
+.web-intro-readable .web-lead{font-size:20px;color:#163c53;line-height:1.6}
+.web-intro-readable .actions{margin-block:24px}
+.web-intro-readable .web-note{font-size:11px;color:#617d8e}
+.nova-site .navrow{min-height:108px;gap:24px}
+.nova-site header .brand img{width:235px!important;max-height:104px!important;height:auto}
+.nova-site .header-brand-contact{gap:22px}
+.nova-site .header-contact-qr{display:block!important;transform:none}
+.nova-site .header-qr-button img{width:78px!important;height:78px!important;max-width:none}
+.nova-site .header-qr-button{font-size:9px;gap:3px;padding-block:7px}
+.nova-site .header-navigation-stack{gap:10px}
+.nova-site #nav{gap:16px}
+.nova-site #nav a{font-size:12px}
+.nova-site .wrap{max-width:1200px;width:calc(100% - 48px)}
+.nova-site .nx-info-row>*,.nova-site .grid>*,.nova-site .web-hero-grid>*,.nova-site .contactgrid>*,.nova-site .sf-grid>*,.nova-site .layout>*,.nova-site .coverage-grid>*{min-width:0}
+.nova-site .sf-grid a{overflow-wrap:anywhere}
+.nova-site input,.nova-site textarea,.nova-site select{max-width:100%;font-size:16px}
+.nova-site .nx-service-item summary h3{min-width:0}
+@media(max-width:1150px){.nova-site .header-brand-contact{gap:13px}.nova-site header .brand img{width:195px!important;max-height:90px!important}.nova-site .header-qr-button img{width:66px!important;height:66px!important}.nova-site #nav{gap:10px}.nova-site #nav a{font-size:11px}.nova-site #nav .btn{padding:10px 12px}.nova-site .navrow{gap:14px;min-height:100px}.nova-site .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* A navegação passa a menu compacto antes de deixar de caber. */
+@media(max-width:1000px){.nova-site .toggle{display:inline-flex!important}.nova-site #nav{display:none;position:absolute;left:0;right:0;top:100%;background:white;padding:22px;box-shadow:0 15px 25px #09263c22;flex-direction:column;align-items:stretch;max-height:calc(100dvh - 140px);overflow-y:auto}.nova-site #nav.open{display:flex}.nova-site #nav a{font-size:14px;padding:10px}.nova-site .header-navigation-stack{flex-direction:row;align-items:center;gap:18px}.nova-site .navrow{min-height:100px}.nova-site .sf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nova-site .contactgrid{gap:28px}.nova-site .web-hero-grid{grid-template-columns:1fr 1fr;gap:25px}}
+@media(max-width:760px){.nova-site .wrap{width:calc(100% - 36px)}.nova-site .nx-visual,.nova-site.nova-index .nx-integrated-hero .nx-visual,.nova-site.nova-catalogo .nx-visual,.nova-site .web-hero{height:320px!important;min-height:320px!important;max-height:320px!important}.nova-site .nx-heading,.nova-site.nova-index .nx-integrated-hero .nx-heading{padding-block:32px!important}.nova-site .web-hero{padding-block:32px!important}.nova-site .nx-heading h1,.nova-site.nova-catalogo .nx-heading h1,.nova-site .web-hero h1{font-size:36px!important;max-width:650px}.nova-site .nx-info-row{grid-template-columns:1fr;gap:18px}.nova-site .web-hero-grid,.nova-site .contactgrid,.nova-site .servicos-apresentacao,.nova-site .steps,.nova-site .coverage-grid{grid-template-columns:1fr}.nova-site .web-demo{transform:none}.nova-site .section{padding:45px 0}.nova-site .language-options{gap:8px;font-size:10px}.nova-site header .brand img{width:185px!important}.nova-site .header-qr-button img{width:64px!important;height:64px!important}.nova-site .header-brand-contact{gap:12px}.nova-site .header-navigation-stack{gap:12px}}
+@media(max-width:520px){.nova-site .header-navigation-stack{flex-direction:column;gap:7px}.nova-site .navrow{min-height:96px;gap:10px}.nova-site header .brand img{width:155px!important;max-height:82px!important}.nova-site .header-qr-button img{width:56px!important;height:56px!important}.nova-site .header-qr-button{font-size:7px}.nova-site .header-brand-contact{gap:9px}.nova-site .language-options{font-size:9px;gap:7px}.nova-site .toggle{padding:8px 12px;min-height:36px}.nova-site .nx-heading h1,.nova-site.nova-catalogo .nx-heading h1,.nova-site .web-hero h1{font-size:31px!important}.nova-site .nx-visual,.nova-site.nova-index .nx-integrated-hero .nx-visual,.nova-site.nova-catalogo .nx-visual,.nova-site .web-hero{height:300px!important;min-height:300px!important;max-height:300px!important}.nova-site .grid,.nova-site .sf-grid,.nova-site .web-feature-grid,.nova-site .web-process{grid-template-columns:1fr}.nx-readable-info .nx-hero-zone{padding:17px!important}.nova-site .nx-info .actions .btn{width:100%}.nova-site .sf-bottom{flex-direction:column}.nova-site .nx-heading .eyebrow{font-size:9px;letter-spacing:.12em}.nova-site .web-demo-content p{font-size:28px}}
+@media(max-width:359px){.nova-site .wrap{width:calc(100% - 28px)}.nova-site header .brand img{width:130px!important}.nova-site .header-qr-button img{width:48px!important;height:48px!important}.nova-site .header-brand-contact{gap:7px}.nova-site .nx-heading h1,.nova-site.nova-catalogo .nx-heading h1,.nova-site .web-hero h1{font-size:28px!important}}

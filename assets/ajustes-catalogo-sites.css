@@ -1,0 +1,20 @@
+
+/* Coerência das fotografias de abertura e navegação web. */
+.nova-site .nx-visual{height:365px}
+.nova-site .nx-heading h1{font-size:clamp(34px,4.1vw,56px);max-width:830px}
+.nova-catalogo .nx-visual{height:365px;background:#071e30}
+.nova-catalogo .nx-visual>img{object-position:50% 58%}
+.nova-catalogo .nx-visual:after{background:linear-gradient(90deg,#051c31e8 0%,#061e3280 56%,#071e3026 100%),linear-gradient(0deg,#071e3080,transparent 65%)}
+.nova-catalogo .nx-heading h1{font-size:clamp(33px,3.7vw,51px);max-width:820px;line-height:1.08}
+.nova-index .nx-integrated-hero .nx-visual,.nova-index .nx-integrated-hero .nx-heading{min-height:680px;height:auto}
+.nova-index .nx-integrated-hero .nx-heading{padding-block:44px}
+.nx-integrated-hero .nx-hero-copy{margin-top:20px}
+.nx-integrated-hero .nx-hero-zone{margin-block:20px;padding-block:17px}
+.nova-site #nav{gap:18px}
+.nova-site .sf-grid{grid-template-columns:1.3fr 1fr 1fr 1.15fr 1.15fr;gap:25px}
+.sf-web-note{font-size:11px!important;line-height:1.8;color:#9ebbcf;margin-top:18px}
+.nova-criacao-sites #nav a[href="servicos.html"]{text-decoration:none;color:var(--ink)}
+@media(max-width:1200px){.nova-site #nav{gap:12px}.nova-site #nav a{font-size:12px}.nova-site header .brand img{width:235px}.nova-site .sf-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}.sf-brand-column{grid-column:span 1}}
+@media(max-width:950px) and (min-width:761px){.nova-site .navrow{gap:15px}.nova-site header .brand img{width:190px}.nova-site #nav{gap:9px}.nova-site #nav a{font-size:11px}.nova-site #nav .btn{padding:9px 12px}.nova-site .header-contact-qr{display:none}}
+@media(max-width:760px){.nova-site .nx-visual,.nova-catalogo .nx-visual{height:350px}.nova-site .nx-heading h1{font-size:37px}.nova-index .nx-integrated-hero .nx-visual,.nova-index .nx-integrated-hero .nx-heading{min-height:0;height:auto}.nova-index .nx-integrated-hero .nx-heading{padding-block:34px}.nova-site .sf-grid{grid-template-columns:1fr 1fr}.nova-catalogo .nx-visual>img{object-position:55% 50%}.nova-site header .brand img{width:220px}}
+@media(max-width:480px){.nova-site .nx-visual,.nova-catalogo .nx-visual{height:325px}.nova-site .nx-heading h1{font-size:32px}.nova-catalogo .nx-heading h1{font-size:32px}.nova-site .sf-grid{grid-template-columns:1fr}.nova-site header .brand img{width:190px}}

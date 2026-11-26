@@ -1,0 +1,19 @@
+
+/* La photographie suit le contenu, sans minimum de hauteur ni zone vide. */
+html body.nova-site .banner .nx-visual,
+html body.nova-site.nova-index .nx-integrated-hero .nx-visual,
+html body.nova-site.nova-catalogo .banner .nx-visual{height:auto!important;min-height:0!important;max-height:none!important;overflow:hidden}
+html body.nova-site .banner .nx-heading,
+html body.nova-site.nova-index .nx-integrated-hero .nx-heading{height:auto!important;min-height:0!important;max-height:none!important;padding-top:30px!important;padding-bottom:28px!important;justify-content:flex-start!important}
+html body.nova-site .banner .nx-heading h1{margin:0!important;line-height:1.08!important;font-size:clamp(32px,3.3vw,46px)!important;max-width:1000px}
+html body.nova-site .banner .nx-heading>.eyebrow{margin-bottom:14px!important}
+html body.nova-site .banner .nx-overlay-content{margin-top:20px;gap:16px 30px;max-width:1050px;width:100%}
+html body.nova-site .banner .nx-overlay-content>p{font-size:13px;line-height:1.8;color:#e0edf5;margin:0}
+html body.nova-site .banner .nx-overlay-content>.actions{margin:0!important;grid-column:1/-1}
+html body.nova-site .banner .nx-overlay-content .nx-hero-zone{margin:0!important}
+html body.nova-site .banner .nx-visual:after{background:linear-gradient(90deg,#041a2ef0 0%,#061e32d4 62%,#071e307a 100%)!important}
+html body.nova-site .web-hero{height:auto!important;min-height:0!important;max-height:none!important;padding-top:30px!important;padding-bottom:28px!important;align-items:flex-start!important}
+html body.nova-site .web-hero .web-hero-grid{align-items:center}
+html body.nova-site .web-hero .web-note{margin-bottom:0!important}
+@media(max-width:760px){html body.nova-site .banner .nx-heading,html body.nova-site.nova-index .nx-integrated-hero .nx-heading{padding-top:26px!important;padding-bottom:26px!important}html body.nova-site .banner .nx-overlay-content{grid-template-columns:1fr;gap:15px;margin-top:20px}html body.nova-site .banner .nx-heading h1{font-size:34px!important}html body.nova-site .banner .nx-overlay-content>p{font-size:13px}html body.nova-site .web-hero{padding-block:26px!important}}
+@media(max-width:480px){html body.nova-site .banner .nx-heading h1{font-size:30px!important}html body.nova-site .banner .nx-heading,html body.nova-site.nova-index .nx-integrated-hero .nx-heading{padding-top:24px!important;padding-bottom:24px!important}}

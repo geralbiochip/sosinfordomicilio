@@ -1,0 +1,23 @@
+
+.casa-experiencia{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(125deg,#f5faff,#fff 65%);padding:72px 24px;border-block:1px solid #dceaf3}
+.casa-layout{max-width:1160px;margin:auto;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:36px}
+.casa-copy .casa-kicker{color:#087baf;font-size:12px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+.casa-copy h2{font-size:clamp(28px,3.4vw,44px);line-height:1.12;letter-spacing:-.035em;color:#102c46;margin:16px 0 22px}
+.casa-copy p{color:#4b6378;line-height:1.8;max-width:480px}
+.casa-pills{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.casa-pills span{padding:8px 12px;border:1px solid #cfe3ef;border-radius:50px;background:#ffffffb8;font-size:13px;color:#21526f}
+.casa-link{display:inline-block;background:#103a59;color:white!important;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:650;transition:background .2s,transform .2s}
+.casa-link:hover{background:#087baf;transform:translateY(-2px)}
+.casa-stage{position:relative;text-align:center;min-width:0}
+.casa-stage:before{content:"";position:absolute;inset:14%;background:radial-gradient(ellipse,#38bdf838,transparent 70%);border-radius:50%;filter:blur(25px);animation:casa-aura 6s ease-in-out infinite;pointer-events:none}
+.casa-visual{position:relative;width:100%;max-width:550px;margin:auto;aspect-ratio:1;mix-blend-mode:multiply;transition:transform .55s ease}
+@media(hover:hover){.casa-visual:hover{transform:perspective(1000px) rotateY(-4deg) rotateX(2deg)}}
+.casa-visual canvas,.casa-visual img{width:100%;height:auto;display:block}.casa-visual [hidden]{display:none}
+.casa-controls{position:relative;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:#52697c}
+.casa-controls button{font:inherit;cursor:pointer;color:#245673;background:white;border:1px solid #b9d6e7;border-radius:30px;padding:8px 15px}
+.casa-controls button:focus-visible,.casa-link:focus-visible{outline:3px solid #0284c7;outline-offset:4px}
+@keyframes casa-aura{50%{opacity:.5;transform:scale(1.17)}}
+@media(max-width:760px){.casa-experiencia{padding:46px 20px}.casa-layout{grid-template-columns:1fr;gap:12px}.casa-copy h2{max-width:520px}.casa-stage{max-width:510px;width:100%;margin:auto}}
+@media(prefers-reduced-motion:reduce){.casa-stage:before{animation:none}.casa-visual,.casa-link{transition:none;transform:none!important}}
+
+.casa-stage.casa-paused:before{animation-play-state:paused}
