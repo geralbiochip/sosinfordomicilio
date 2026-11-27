@@ -1,0 +1,59 @@
+
+html{scrollbar-gutter:stable}
+html body.nova-site header .brand img{width:270px;height:auto;max-height:none;aspect-ratio:1261/560}
+html body.nova-site header .brand{display:block;flex:none}
+@media(max-width:1200px){html body.nova-site header .brand img{width:235px}}
+@media(max-width:950px) and (min-width:761px){html body.nova-site header .brand img{width:200px}}
+@media(max-width:760px){html body.nova-site header .brand img{width:220px}}
+@media(max-width:480px){html body.nova-site header .brand img{width:190px}}
+html body.nova-site header .header-qr-button img{width:48px;height:48px}
+html body.nova-site .header-contact-qr{min-width:70px}
+
+/* cartões: azul no rato */
+html body :is(.service-card,.card:not(form):not(:has(input,textarea,select)),.steps>div,.seo-content-grid>article,.remote-card,.web-feature-grid article,.web-three>*,.web-process>*):hover{background:#123a59!important;border-color:#83c9df!important;opacity:1!important;box-shadow:0 18px 38px rgba(18,58,89,.35)!important}
+html body :is(.service-card,.card,.steps>div,.seo-content-grid>article,.remote-card,.web-feature-grid article,.web-three>*,.web-process>*).in-view{opacity:1!important}
+html body :is(.service-card,.card:not(form),.steps>div,.seo-content-grid>article,.remote-card,.web-feature-grid article,.web-three>*,.web-process>*):hover :is(.card-link,.service-body,.service-heading,.service-original){background:transparent!important}
+html body .service-card:hover .card-link:hover{background:transparent!important}
+html body .service-card:hover :is(h3,h2,p,li,.small){color:#fff!important}
+html body .service-card:hover :is(p,li){color:#d6eaf3!important}
+html body .service-card:hover .more{color:#9ff1ea!important}
+html body .service-card:hover .service-heading img{background:#e8f6f8!important}
+html body :is(.service-card,.card,.steps>div,.seo-content-grid>article,.remote-card,.web-feature-grid article,.web-three>*,.web-process>*){transition:transform .3s ease,box-shadow .3s ease,background-color .3s ease,border-color .3s ease,opacity .7s ease}
+
+/* menu do catálogo */
+.sidebar button,.sidebar summary{transition:none;transform:none}
+.sidebar button:hover,.sidebar summary:hover,.sidebar button[aria-pressed="true"],.sidebar button[aria-pressed="true"]:hover{background:#0f2f4d!important;color:#fff!important;transform:none!important}
+
+@view-transition{navigation:auto}
+header{view-transition-name:site-header}
+::view-transition-group(site-header){animation-duration:0s}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.12s}
+.web-demo-content{position:relative}
+.web-demo .web-demo-cube{position:absolute;right:70px;top:50%;left:auto;margin:-75px 0 0;transform:scale(1.15);transform-origin:right center;z-index:3}
+.web-demo .web-cube{animation:web-cube-spin 16s linear infinite}
+@media(max-width:520px){.web-demo .web-demo-cube{display:none}}
+
+a.web-demo-cta{text-decoration:none;cursor:pointer;color:#fff;transition:background-color .25s ease}
+a.web-demo-cta:hover{background:#123a59}
+a.web-demo-cta:focus-visible{outline:3px solid #69e3da;outline-offset:3px}
+@media(max-width:760px){.web-demo .web-demo-cube{right:30px;transform:scale(.9)}}
+
+.brand-strip{background:#f1f6f8;border-block:1px solid #dce6eb;padding:22px 0 16px;overflow:hidden}
+.brand-strip-title{margin:0 auto 14px;max-width:1160px;padding:0 20px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5a7081}
+.brand-strip-viewport{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.brand-strip-track{display:flex;width:max-content;animation:brand-strip-scroll 70s linear infinite}
+.brand-strip:hover .brand-strip-track{animation-play-state:paused}
+.brand-strip-set{display:flex;align-items:center;gap:56px;list-style:none;margin:0;padding:0 28px}
+.brand-strip-set li{display:flex;align-items:center;height:44px}
+.brand-strip-set img{height:30px;width:auto;max-width:130px;object-fit:contain}
+.brand-strip-word{font-weight:800;font-size:22px;letter-spacing:-.02em;white-space:nowrap}
+.brand-strip-note{margin:10px auto 0;max-width:900px;padding:0 20px;text-align:center;font-size:10px;color:#7a8e9b}
+@keyframes brand-strip-scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.brand-strip-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.brand-strip-set[aria-hidden]{display:none}.brand-strip-set{flex-wrap:wrap;justify-content:center;gap:28px}}
+.about-trust-grid{grid-template-columns:repeat(2,1fr)!important}
+.about-trust-photo{margin:0;display:flex;align-items:stretch}
+.about-trust-photo img{width:100%;height:100%;max-height:270px;object-fit:cover;border-radius:14px;border:1px solid #dce6eb}
+@media(max-width:760px){.about-trust-grid{grid-template-columns:1fr!important}.about-trust-photo img{max-height:220px}}
+.casa-experiencia .casa-visual{max-width:460px}
+.web-demo .web-demo-cube{right:auto!important;left:76%;transform:translateX(-50%) scale(1.15)!important;transform-origin:center center!important}
+@media(max-width:760px){.web-demo .web-demo-cube{left:78%;transform:translateX(-50%) scale(.9)!important}}
