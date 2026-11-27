@@ -148,3 +148,11 @@ html body.nova-site .history-section :is(p,figcaption){color:#0a1119}
 .portfolio-note{margin-top:22px}
 @media(max-width:860px){.portfolio-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.pf-body{transition:none}}
+
+/* cubo numa coluna própria: o texto quebra em vez de ficar por baixo do cubo */
+.web-hero .web-demo-content{display:grid!important;grid-template-columns:minmax(0,1fr) 150px;grid-template-areas:"tag tag" "text cube" "cta cta";align-items:center;column-gap:8px}
+.web-hero .web-demo-content>.web-demo-tag{grid-area:tag}
+.web-hero .web-demo-content>p{grid-area:text;min-width:0;overflow-wrap:anywhere;hyphens:auto}
+.web-hero .web-demo-content>.web-demo-cta{grid-area:cta;justify-self:start}
+.web-hero .web-demo-content>.web-demo-cube{grid-area:cube;position:relative!important;left:auto!important;right:auto!important;top:auto!important;margin:0!important;transform:none!important;justify-self:center;align-self:center;width:150px;height:150px}
+@media(max-width:520px){.web-hero .web-demo-content{grid-template-columns:1fr;grid-template-areas:"tag" "text" "cta"}}
